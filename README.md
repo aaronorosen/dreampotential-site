@@ -2,7 +2,7 @@
 
 ---
 
-# svelte app
+# Dream Potential Website
 
 This is a codebase for the [Dream Potential](https://dreampotential.io) website. It lives at https://github.com/sagedreams/dreampotential.
 
