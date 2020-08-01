@@ -4,14 +4,9 @@
 
 # svelte app
 
-This is a project template for [Svelte](https://svelte.dev) apps. It lives at https://github.com/sveltejs/template.
+This is a codebase for the [Dream Potential](https://dreampotential.io) website. It lives at https://github.com/sagedreams/dreampotential.
 
-To create a new project based on this template using [degit](https://github.com/Rich-Harris/degit):
-
-```bash
-npx degit sveltejs/template svelte-app
-cd svelte-app
-```
+Clone this repository to your local machine and follow these commands in Terminal 
 
 *Note that you will need to have [Node.js](https://nodejs.org) installed.*
 
@@ -21,7 +16,7 @@ cd svelte-app
 Install the dependencies...
 
 ```bash
-cd svelte-app
+cd dreampotential
 npm install
 ```
 
