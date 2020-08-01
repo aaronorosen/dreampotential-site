@@ -1,30 +1,94 @@
 <script>
-	export let name;
+	import '../node_modules/bulma/css/bulma.min.css';
 </script>
 
-<main>
-	<h1>Hello {name}!</h1>
-	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
-</main>
+
+<section class="hero is-primary is-medium">
+	<!-- Hero head: will stick at the top -->
+	<img src="http://localhost:5000/images/Hero-Graphic-01-SK.svg" alt="Hero Image" />
+
+	<div class="hero-head">
+		<div class="navbar-brand">
+			<div class="logo">
+			  <img src="images/DP-Icon-01@2x.png" alt="Dream Potential Logo">
+			</div>
+			<span class="navbar-burger burger" data-target="navbarMenuHeroA">
+			  <span></span>
+			  <span></span>
+			  <span></span>
+			</span>
+		</div>	
+		<nav class="navbar">
+		  <div class="container">
+			<div id="navbarMenuHeroA" class="navbar-menu">
+			  <div class="navbar-end">
+				<a class="navbar-item is-active">
+				  Home
+				</a>
+				<a class="navbar-item">
+				  Examples
+				</a>
+				<a class="navbar-item">
+				  Documentation
+				</a>
+				<span class="navbar-item">
+				  <a class="button is-primary is-inverted">
+					<span class="icon">
+					  <i class="fab fa-github"></i>
+					</span>
+					<span>Download</span>
+				  </a>
+				</span>
+			  </div>
+			</div>
+		  </div>
+		</nav>
+	  </div>
+	
+	
+</section>
+
+<section>
+  
+	<!-- Hero footer: will stick at the bottom -->
+	<div class="hero-foot">
+	  <nav class="tabs">
+		<div class="container">
+		  
+		</div>
+	  </nav>
+	</div>
+</section>
 
 <style>
-	main {
-		text-align: center;
-		padding: 1em;
-		max-width: 240px;
-		margin: 0 auto;
+	:global(body) {
+        background-color: #411C71;
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+	}
+	
+	img{
+		position: absolute;
+		right: 0px;
+		top: 0px;
+		width: 500px;
+
+	}
+	.logo img{ 
+	position: absolute;
+    width: 80px;
+    z-index: 2;
+    left: 10px;
+	top: 10px;
 	}
 
-	h1 {
-		color: #ff3e00;
-		text-transform: uppercase;
-		font-size: 4em;
-		font-weight: 100;
+	.hero.is-primary{
+		background-color:transparent;
 	}
 
-	@media (min-width: 640px) {
-		main {
-			max-width: none;
-		}
+	.hero.is-primary .navbar-link.is-active, .hero.is-primary .navbar-link:hover, .hero.is-primary a.navbar-item.is-active, .hero.is-primary a.navbar-item:hover  {
+    background-color: transparent;
+    color: #fff;
 	}
+
 </style>
