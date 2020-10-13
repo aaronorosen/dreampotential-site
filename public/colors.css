@@ -1,0 +1,9 @@
+:root {
+    --first: #411c71;
+    --second: #260f43;
+    --third: #ffffff;
+    --fourth: #af4d55;
+    --fifth: linear-gradient(180deg, #210e39 0%, #34165b 47%, #260f43 100%) 0% 0% no-repeat padding-box;
+    /* Transparent */
+    --first-half: #411c7199;
+}
