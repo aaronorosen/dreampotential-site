@@ -1,10 +1,19 @@
-# Stage 1
-FROM node:11 as react-build
-WORKDIR /app
-COPY . ./
+FROM node:14-alpine
+
+WORKDIR /usr/src/app
+
+COPY rollup.config.js ./
+COPY package*.json ./
+
 RUN npm install
-RUN npm run dev
+
+COPY ./src ./src
+COPY ./public ./public
+
+RUN npm run-script build
 
 EXPOSE 5000
-CMD ["npm", "run" "dev"]
 
+ENV HOST=0.0.0.0
+
+CMD [ "npm", "start" ]
