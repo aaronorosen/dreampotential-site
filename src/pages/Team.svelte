@@ -20,7 +20,7 @@
     },
     {
       bg: '',
-      name: 'Team Member',
+      name: 'Partner',
     },
   ]
 
