@@ -5,6 +5,7 @@ body {
     --font-first: 'Roboto', sans-serif;
     --font-second: 'Yanone Kaffeesatz', sans-serif;
     font-family: var(--font-first);
+    scroll-behavior: smooth;
 }
 
 body {

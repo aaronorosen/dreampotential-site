@@ -1,3 +1,7 @@
+<script>
+  import Connect from "../components/Connect.svelte";
+</script>
+
 <style>
   section {
     width: 100%;
@@ -90,3 +94,5 @@
     </p>
   </div>
 </section>
+
+<Connect />

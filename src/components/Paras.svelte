@@ -11,7 +11,8 @@
   }
   span {
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
   p {
     flex-basis: 80%;
@@ -22,29 +23,44 @@
       flex-basis: 100%;
     }
   }
+  span > div {
+    width: 100%;
+  }
+  span a {
+    background: #ffffff22;
+    color: white;
+    font-size: 1rem;
+    padding: 0.6rem 1rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 2px;
+    text-decoration: none;
+  }
 </style>
 
 <div class="wrapper">
-
   <span>
     <p>
       Dream Potential is an accelerator program and technology collective. Some
       other information goes here that mentions something really cool.
     </p>
+    <div><a href="#connect">Apply Accelerator Program</a></div>
   </span>
 
   <span>
     <p>
-      Dream Potential is an accelerator program and technology collective. Some
-      other information goes here that mentions something really cool.
+      Bring your Vision we manifest your projects. Some other information goes
+      here that mentions something really cool.
     </p>
+    <div><a href="#connect">Build Vision</a></div>
   </span>
 
   <span>
     <p>
-      Dream Potential is an accelerator program and technology collective. Some
-      other information goes here that mentions something really cool.
+      Not sure what how to enhance your organization or business. Some other
+      information goes here that mentions something really cool.
     </p>
+    <div><a href="#connect">Get in Touch</a></div>
   </span>
-
 </div>
