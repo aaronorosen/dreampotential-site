@@ -18,12 +18,15 @@
         padding: 1rem;
         border-radius: 0.4rem;
     }
+    .buttons {
+        display: flex;
+    }
     .close-btn {
-        background: #411c71;
+        background: #8855cc;
         color: #e6d3ff;
         border: none;
         outline: none;
-        padding: 0.4rem;
+        padding: 0.2rem 0.5rem;
         cursor: pointer;
         border-radius: 2px;
         font-size: 1.1rem;
@@ -42,5 +45,15 @@
         accusamus repellendus praesentium obcaecati architecto ipsum nisi.
         Doloribus, alias?
     </p>
-    <button class="close-btn" on:click={close}>close</button>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
+        reprehenderit, neque aliquam dolore dignissimos ullam nulla doloribus
+        facilis deserunt! Officiis inventore illo facere atque dicta modi dolor,
+        accusantium aliquid recusandae unde expedita praesentium ut consequatur
+        quasi dolorem sit. Fuga, nobis. Aut quibusdam sed cupiditate minus? Sint
+        mollitia excepturi at obcaecati.
+    </p>
+    <div class="buttons">
+        <button class="close-btn" on:click={close}>close</button>
+    </div>
 </div>
