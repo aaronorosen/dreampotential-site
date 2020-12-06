@@ -47,6 +47,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
   }
   .partner:hover {
     background: var(--fourth);
