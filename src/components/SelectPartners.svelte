@@ -1,3 +1,55 @@
+<script>
+  import AboutProject from "./AboutProject.svelte";
+  import PartnerOverlay from "./PartnerOverlay.svelte";
+
+  const partners = [
+    {
+      name: "Neighborgoods",
+      about: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat eos in
+        placeat facere vitae debitis quia. Nam eligendi incidunt odio pariatur
+        accusamus repellendus praesentium obcaecati architecto ipsum nisi.
+        Doloribus, alias?`,
+      img: "/assets/DP-Logos-01.svg",
+    },
+    {
+      name: "Manifest Now",
+      about: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat eos in
+        placeat facere vitae debitis quia. Nam eligendi incidunt odio pariatur
+        accusamus repellendus praesentium obcaecati architecto ipsum nisi.
+        Doloribus, alias?`,
+      img: "/assets/DP-Logos-03.svg",
+    },
+    {
+      name: "IAM",
+      about: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat eos in
+        placeat facere vitae debitis quia. Nam eligendi incidunt odio pariatur
+        accusamus repellendus praesentium obcaecati architecto ipsum nisi.
+        Doloribus, alias?`,
+      img: "/assets/I-AM-Logo-04.svg",
+      smaller: true,
+    },
+    {
+      name: "Connective Places",
+      about: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat eos in
+        placeat facere vitae debitis quia. Nam eligendi incidunt odio pariatur
+        accusamus repellendus praesentium obcaecati architecto ipsum nisi.
+        Doloribus, alias?`,
+      img: "/assets/DP-Logos-02.svg",
+    },
+    {
+      name: "Viaduct",
+      about: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat eos in
+        placeat facere vitae debitis quia. Nam eligendi incidunt odio pariatur
+        accusamus repellendus praesentium obcaecati architecto ipsum nisi.
+        Doloribus, alias?`,
+      img: "/assets/Viaduct-Logo-05.svg",
+      smaller: true,
+    },
+  ];
+
+  let activePartner = -1;
+</script>
+
 <style>
   section {
     max-width: 90%;
@@ -49,7 +101,8 @@
     align-items: center;
     cursor: pointer;
   }
-  .partner:hover {
+  .partner:hover,
+  .partner.active {
     background: var(--fourth);
   }
   .partner img {
@@ -72,21 +125,19 @@
     <div class="hr" />
   </div>
   <div class="partners">
-    <div class="partner">
-      <img src="/assets/DP-Logos-01.svg" alt="" />
-    </div>
-    <div class="partner">
-      <img src="/assets/DP-Logos-03.svg" alt="" />
-    </div>
-    <div class="partner">
-      <img class="smaller" src="/assets/I-AM-Logo-04.svg" alt="" />
-    </div>
-    <div class="partner">
-      <img src="/assets/DP-Logos-02.svg" alt="" />
-    </div>
-    <div class="partner">
-      <img class="smaller" src="/assets/Viaduct-Logo-05.svg" alt="" />
-    </div>
+    {#each partners as partner, index}
+      <div
+        class="partner"
+        class:active={index === activePartner}
+        on:click={() => (activePartner = index)}>
+        <img class:smaller={partner.smaller} src={partner.img} alt="" />
+      </div>
+      {#if index === activePartner}
+        <PartnerOverlay on:close={() => (activePartner = -1)}>
+          <AboutProject {partner} on:close={() => (activePartner = -1)} />
+        </PartnerOverlay>
+      {/if}
+    {/each}
   </div>
   <div class="closing">
     <div class="hr" />
