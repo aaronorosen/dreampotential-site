@@ -1,3 +1,39 @@
+<script>
+    let submitToUrl = "https://sfapp-api.dreamstate-4-all.org/form_lead/create";
+
+    let name = "test 2";
+    let phone = "01431 431 111";
+    let email = "test2@mail.com";
+    let description = "what next ...";
+
+    let message = "";
+    let submiting = false;
+
+    async function submitForm(event) {
+        submiting = true;
+        message = "submitting";
+        const response = await fetch(submitToUrl, {
+            method: "POST",
+            headers: {
+                "content-type": "application/json",
+            },
+            body: JSON.stringify({
+                name,
+                phone,
+                email,
+                blub: description,
+            }),
+        });
+        const responseData = await response.json();
+        false && console.log(responseData);
+        submiting = false;
+        message = "submited";
+        setTimeout(() => {
+            message = "";
+        }, 5000);
+    }
+</script>
+
 <style>
     section {
         margin: 4rem 0;
@@ -57,6 +93,10 @@
     .connect:hover {
         background: #411c71cc;
     }
+    .connect:disabled {
+        background: var(--first);
+        opacity: 0.6;
+    }
     input::placeholder,
     textarea::placeholder {
         color: #ffffff66;
@@ -71,7 +111,7 @@
 <section id="connect">
     <h1>Get in Touch</h1>
     <div class="container">
-        <form action="">
+        <form on:submit|preventDefault={submitForm}>
             <label for="name">
                 name:
                 <input
@@ -79,7 +119,8 @@
                     class="name"
                     placeholder="John Doe"
                     required
-                    spellcheck="false" />
+                    spellcheck="false"
+                    bind:value={name} />
             </label>
             <label for="phone">
                 phone:
@@ -87,7 +128,8 @@
                     type="tel"
                     class="phone"
                     placeholder="123-45-678"
-                    pattern="\+?[-0-9]{'{3,15}'}" />
+                    pattern="\+?[-0-9 ]{'{3,15}'}"
+                    bind:value={phone} />
             </label>
             <label for="email">
                 email:
@@ -95,7 +137,8 @@
                     type="email"
                     class="email"
                     placeholder="john@example.com"
-                    required />
+                    required
+                    bind:value={email} />
             </label>
             <label for="description">
                 description:
@@ -103,9 +146,12 @@
                     class="description"
                     placeholder="type your message here"
                     required
-                    spellcheck="false" />
+                    spellcheck="false"
+                    bind:value={description} />
             </label>
-            <button class="connect">Connect</button>
+            <button
+                class="connect"
+                disabled={submiting}>{message || 'CONNECT'}</button>
         </form>
     </div>
 </section>

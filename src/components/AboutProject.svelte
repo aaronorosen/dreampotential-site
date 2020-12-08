@@ -17,6 +17,8 @@
         background: #e6d3ff;
         padding: 1rem;
         border-radius: 0.4rem;
+        position: relative;
+        overflow: hidden;
     }
     .buttons {
         display: flex;
@@ -30,10 +32,18 @@
         cursor: pointer;
         border-radius: 2px;
         font-size: 1.1rem;
+        position: absolute;
+        right: 0;
+        top: 0;
     }
     h2,
     p {
         cursor: text;
+    }
+    .video-wrapper {
+        display: flex;
+        justify-content: center;
+        margin: 1rem 0;
     }
 </style>
 
@@ -53,7 +63,17 @@
         quasi dolorem sit. Fuga, nobis. Aut quibusdam sed cupiditate minus? Sint
         mollitia excepturi at obcaecati.
     </p>
+    <div class="video-wrapper">
+        <iframe
+            title="youtube video"
+            width="560"
+            height="315"
+            src="https://www.youtube-nocookie.com/embed/OvtBcf6QJRc?controls=0"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen />
+    </div>
     <div class="buttons">
-        <button class="close-btn" on:click={close}>close</button>
+        <button class="close-btn" on:click={close}>x</button>
     </div>
 </div>
