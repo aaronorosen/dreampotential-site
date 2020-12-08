@@ -1,10 +1,10 @@
 <script>
     let submitToUrl = "https://sfapp-api.dreamstate-4-all.org/form_lead/create";
 
-    let name = "test 2";
-    let phone = "01431 431 111";
-    let email = "test2@mail.com";
-    let description = "what next ...";
+    let name = "";
+    let phone = "";
+    let email = "";
+    let description = "";
 
     let message = "";
     let submiting = false;
