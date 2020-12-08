@@ -1,6 +1,4 @@
 <script>
-  import { onMount } from 'svelte'
-
   let members = [
     {
       bg: '/assets/SAurabh-Kulkarni.png',

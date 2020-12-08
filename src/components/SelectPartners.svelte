@@ -116,7 +116,6 @@
     display: flex;
     flex-flow: wrap;
     margin: 0 auto;
-    /* justify-content: center; */
     gap: 0.5rem;
   }
   .partner {
