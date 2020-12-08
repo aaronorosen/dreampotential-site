@@ -10,6 +10,7 @@
         accusamus repellendus praesentium obcaecati architecto ipsum nisi.
         Doloribus, alias?`,
       img: "/assets/DP-Logos-01.svg",
+
     },
     {
       name: "Manifest Now",
@@ -26,7 +27,7 @@
         accusamus repellendus praesentium obcaecati architecto ipsum nisi.
         Doloribus, alias?`,
       img: "/assets/I-AM-Logo-04.svg",
-      smaller: true,
+      imageWith: "150",
     },
     {
       name: "Connective Places",
@@ -43,7 +44,34 @@
         accusamus repellendus praesentium obcaecati architecto ipsum nisi.
         Doloribus, alias?`,
       img: "/assets/Viaduct-Logo-05.svg",
-      smaller: true,
+      imageWith: "150",
+    },
+    {
+      name: "No Scroll Dream Reader",
+      about: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat eos in
+        placeat facere vitae debitis quia. Nam eligendi incidunt odio pariatur
+        accusamus repellendus praesentium obcaecati architecto ipsum nisi.
+        Doloribus, alias?`,
+      img: "/assets/NoScrollDreamReader.png",
+      imageWith: "100",
+    },
+    {
+      name: "RePicture",
+      about: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat eos in
+        placeat facere vitae debitis quia. Nam eligendi incidunt odio pariatur
+        accusamus repellendus praesentium obcaecati architecto ipsum nisi.
+        Doloribus, alias?`,
+      img: "/assets/RePicture.png",
+      imageWith: "180",
+    },
+    {
+      name: "AgentStat",
+      about: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat eos in
+        placeat facere vitae debitis quia. Nam eligendi incidunt odio pariatur
+        accusamus repellendus praesentium obcaecati architecto ipsum nisi.
+        Doloribus, alias?`,
+      img: "/assets/AgentStat.png",
+      imageWith: "180"
     },
   ];
 
@@ -108,9 +136,6 @@
   .partner img {
     width: 300px;
   }
-  .partner .smaller {
-    width: 150px;
-  }
   @media (max-width: 1100px) {
     .partner {
       flex-grow: 1;
@@ -130,7 +155,10 @@
         class="partner"
         class:active={index === activePartner}
         on:click={() => (activePartner = index)}>
-        <img class:smaller={partner.smaller} src={partner.img} alt="" />
+        <img
+          style={partner.imageWith ? `width: ${partner.imageWith}px` : ''}
+          src={partner.img}
+          alt="" />
       </div>
       {#if index === activePartner}
         <PartnerOverlay on:close={() => (activePartner = -1)}>
