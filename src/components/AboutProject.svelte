@@ -45,6 +45,9 @@
         justify-content: center;
         margin: 1rem 0;
     }
+    .video-wrapper iframe {
+        max-width: 100%;
+    }
 </style>
 
 <div class="about-project">
