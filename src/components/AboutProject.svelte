@@ -13,7 +13,8 @@
 
 <style>
     .about-project {
-        max-width: 600px;
+        max-width: 80vw;
+        width: 600px;
         background: #e6d3ff;
         padding: 1rem;
         border-radius: 0.4rem;

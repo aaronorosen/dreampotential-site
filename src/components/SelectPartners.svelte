@@ -133,6 +133,7 @@
     background: var(--fourth);
   }
   .partner img {
+    max-width: 70vw;
     width: 300px;
   }
   @media (max-width: 1100px) {
