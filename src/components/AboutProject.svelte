@@ -2,7 +2,6 @@
     import { createEventDispatcher } from "svelte";
 
     export let partner;
-    partner;
 
     const dispatch = createEventDispatcher();
 
@@ -13,13 +12,18 @@
 
 <style>
     .about-project {
-        max-width: 80vw;
+        max-width: 90vw;
         width: 600px;
         background: #e6d3ff;
-        padding: 1rem;
         border-radius: 0.4rem;
         position: relative;
         overflow: hidden;
+    }
+    .content-wrapper {
+        padding: 1rem;
+        max-width: 100%;
+        max-height: 80vh;
+        overflow-y: scroll;
     }
     .buttons {
         display: flex;
@@ -52,32 +56,23 @@
 </style>
 
 <div class="about-project">
-    <h2>{partner.name}</h2>
-    <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat eos in
-        placeat facere vitae debitis quia. Nam eligendi incidunt odio pariatur
-        accusamus repellendus praesentium obcaecati architecto ipsum nisi.
-        Doloribus, alias?
-    </p>
-    <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
-        reprehenderit, neque aliquam dolore dignissimos ullam nulla doloribus
-        facilis deserunt! Officiis inventore illo facere atque dicta modi dolor,
-        accusantium aliquid recusandae unde expedita praesentium ut consequatur
-        quasi dolorem sit. Fuga, nobis. Aut quibusdam sed cupiditate minus? Sint
-        mollitia excepturi at obcaecati.
-    </p>
-    <div class="video-wrapper">
-        <iframe
-            title="youtube video"
-            width="560"
-            height="315"
-            src="https://www.youtube-nocookie.com/embed/OvtBcf6QJRc?controls=0"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen />
-    </div>
-    <div class="buttons">
-        <button class="close-btn" on:click={close}>x</button>
+    <div class="content-wrapper">
+        <h2>{partner.name}</h2>
+        {#each partner.about as about}
+            <p>{about}</p>
+        {/each}
+        <div class="video-wrapper">
+            <iframe
+                title="youtube video"
+                width="560"
+                height="315"
+                src="https://www.youtube-nocookie.com/embed/OvtBcf6QJRc?controls=0"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen />
+        </div>
+        <div class="buttons">
+            <button class="close-btn" on:click={close}>x</button>
+        </div>
     </div>
 </div>

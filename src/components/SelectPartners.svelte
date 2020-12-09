@@ -5,73 +5,131 @@
   const partners = [
     {
       name: "Neighborgoods",
-      about: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat eos in
-        placeat facere vitae debitis quia. Nam eligendi incidunt odio pariatur
-        accusamus repellendus praesentium obcaecati architecto ipsum nisi.
-        Doloribus, alias?`,
+      about: [
+        `Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati dolor
+        quos suscipit. Suscipit, natus. Aspernatur magni, dignissimos sit
+        eveniet sunt voluptates alias. Debitis distinctio omnis odio excepturi
+        quos eos amet dolores recusandae et, beatae saepe nihil modi
+        perferendis, quis consequuntur?`,
+      ],
       img: "/assets/DP-Logos-01.svg",
-
     },
     {
       name: "Manifest Now",
-      about: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat eos in
-        placeat facere vitae debitis quia. Nam eligendi incidunt odio pariatur
-        accusamus repellendus praesentium obcaecati architecto ipsum nisi.
-        Doloribus, alias?`,
+      about: [
+        `Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati dolor
+        quos suscipit. Suscipit, natus. Aspernatur magni, dignissimos sit
+        eveniet sunt voluptates alias. Debitis distinctio omnis odio excepturi
+        quos eos amet dolores recusandae et, beatae saepe nihil modi
+        perferendis, quis consequuntur?`,
+        `Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati dolor
+        quos suscipit. Suscipit, natus. Aspernatur magni, dignissimos sit
+        eveniet sunt voluptates alias. Debitis distinctio omnis odio excepturi
+        quos eos amet dolores recusandae et, beatae saepe nihil modi
+        perferendis, quis consequuntur?`,
+      ],
       img: "/assets/DP-Logos-03.svg",
     },
     {
       name: "IAM",
-      about: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat eos in
-        placeat facere vitae debitis quia. Nam eligendi incidunt odio pariatur
-        accusamus repellendus praesentium obcaecati architecto ipsum nisi.
-        Doloribus, alias?`,
+      about: [
+        `Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati dolor
+        quos suscipit. Suscipit, natus. Aspernatur magni, dignissimos sit
+        eveniet sunt voluptates alias. Debitis distinctio omnis odio excepturi
+        quos eos amet dolores recusandae et, beatae saepe nihil modi
+        perferendis, quis consequuntur?`,
+        `Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati dolor
+        quos suscipit. Suscipit, natus. Aspernatur magni, dignissimos sit
+        eveniet sunt voluptates alias. Debitis distinctio omnis odio excepturi
+        quos eos amet dolores recusandae et, beatae saepe nihil modi
+        perferendis, quis consequuntur?`,
+      ],
       img: "/assets/I-AM-Logo-04.svg",
       imageWith: "150",
     },
     {
       name: "Connective Places",
-      about: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat eos in
-        placeat facere vitae debitis quia. Nam eligendi incidunt odio pariatur
-        accusamus repellendus praesentium obcaecati architecto ipsum nisi.
-        Doloribus, alias?`,
+      about: [
+        `Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati dolor
+        quos suscipit. Suscipit, natus. Aspernatur magni, dignissimos sit
+        eveniet sunt voluptates alias. Debitis distinctio omnis odio excepturi
+        quos eos amet dolores recusandae et, beatae saepe nihil modi
+        perferendis, quis consequuntur?`,
+        `Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati dolor
+        quos suscipit. Suscipit, natus. Aspernatur magni, dignissimos sit
+        eveniet sunt voluptates alias. Debitis distinctio omnis odio excepturi
+        quos eos amet dolores recusandae et, beatae saepe nihil modi
+        perferendis, quis consequuntur?`,
+      ],
       img: "/assets/DP-Logos-02.svg",
     },
     {
       name: "Viaduct",
-      about: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat eos in
-        placeat facere vitae debitis quia. Nam eligendi incidunt odio pariatur
-        accusamus repellendus praesentium obcaecati architecto ipsum nisi.
-        Doloribus, alias?`,
+      about: [
+        `Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati dolor
+        quos suscipit. Suscipit, natus. Aspernatur magni, dignissimos sit
+        eveniet sunt voluptates alias. Debitis distinctio omnis odio excepturi
+        quos eos amet dolores recusandae et, beatae saepe nihil modi
+        perferendis, quis consequuntur?`,
+        `Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati dolor
+        quos suscipit. Suscipit, natus. Aspernatur magni, dignissimos sit
+        eveniet sunt voluptates alias. Debitis distinctio omnis odio excepturi
+        quos eos amet dolores recusandae et, beatae saepe nihil modi
+        perferendis, quis consequuntur?`,
+      ],
       img: "/assets/Viaduct-Logo-05.svg",
       imageWith: "150",
     },
     {
       name: "No Scroll Dream Reader",
-      about: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat eos in
-        placeat facere vitae debitis quia. Nam eligendi incidunt odio pariatur
-        accusamus repellendus praesentium obcaecati architecto ipsum nisi.
-        Doloribus, alias?`,
+      about: [
+        `Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati dolor
+        quos suscipit. Suscipit, natus. Aspernatur magni, dignissimos sit
+        eveniet sunt voluptates alias. Debitis distinctio omnis odio excepturi
+        quos eos amet dolores recusandae et, beatae saepe nihil modi
+        perferendis, quis consequuntur?`,
+        `Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati dolor
+        quos suscipit. Suscipit, natus. Aspernatur magni, dignissimos sit
+        eveniet sunt voluptates alias. Debitis distinctio omnis odio excepturi
+        quos eos amet dolores recusandae et, beatae saepe nihil modi
+        perferendis, quis consequuntur?`,
+      ],
       img: "/assets/NoScrollDreamReader.png",
       imageWith: "100",
     },
     {
       name: "RePicture",
-      about: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat eos in
-        placeat facere vitae debitis quia. Nam eligendi incidunt odio pariatur
-        accusamus repellendus praesentium obcaecati architecto ipsum nisi.
-        Doloribus, alias?`,
+      about: [
+        `Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati dolor
+        quos suscipit. Suscipit, natus. Aspernatur magni, dignissimos sit
+        eveniet sunt voluptates alias. Debitis distinctio omnis odio excepturi
+        quos eos amet dolores recusandae et, beatae saepe nihil modi
+        perferendis, quis consequuntur?`,
+        `Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati dolor
+        quos suscipit. Suscipit, natus. Aspernatur magni, dignissimos sit
+        eveniet sunt voluptates alias. Debitis distinctio omnis odio excepturi
+        quos eos amet dolores recusandae et, beatae saepe nihil modi
+        perferendis, quis consequuntur?`,
+      ],
       img: "/assets/RePicture.png",
       imageWith: "180",
     },
     {
       name: "AgentStat",
-      about: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat eos in
-        placeat facere vitae debitis quia. Nam eligendi incidunt odio pariatur
-        accusamus repellendus praesentium obcaecati architecto ipsum nisi.
-        Doloribus, alias?`,
+      about: [
+        `Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati dolor
+        quos suscipit. Suscipit, natus. Aspernatur magni, dignissimos sit
+        eveniet sunt voluptates alias. Debitis distinctio omnis odio excepturi
+        quos eos amet dolores recusandae et, beatae saepe nihil modi
+        perferendis, quis consequuntur?`,
+        `Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati dolor
+        quos suscipit. Suscipit, natus. Aspernatur magni, dignissimos sit
+        eveniet sunt voluptates alias. Debitis distinctio omnis odio excepturi
+        quos eos amet dolores recusandae et, beatae saepe nihil modi
+        perferendis, quis consequuntur?`,
+      ],
       img: "/assets/AgentStat.png",
-      imageWith: "180"
+      imageWith: "180",
     },
   ];
 
@@ -128,13 +186,13 @@
     align-items: center;
     cursor: pointer;
   }
-  .partner:hover,
-  .partner.active {
+  .partner:hover {
     background: var(--fourth);
   }
   .partner img {
     max-width: 70vw;
     width: 300px;
+    user-select: none;
   }
   @media (max-width: 1100px) {
     .partner {
@@ -151,10 +209,7 @@
   </div>
   <div class="partners">
     {#each partners as partner, index}
-      <div
-        class="partner"
-        class:active={index === activePartner}
-        on:click={() => (activePartner = index)}>
+      <div class="partner" on:click={() => (activePartner = index)}>
         <img
           style={partner.imageWith ? `width: ${partner.imageWith}px` : ''}
           src={partner.img}
