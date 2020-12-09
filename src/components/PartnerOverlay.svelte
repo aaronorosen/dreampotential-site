@@ -20,6 +20,7 @@
         justify-content: center;
         align-items: center;
         cursor: pointer;
+        z-index: 200;
     }
     .content {
         cursor: default;
