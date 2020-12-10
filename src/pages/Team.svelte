@@ -17,8 +17,8 @@
       name: 'Neil Freese',
     },
     {
-      bg: '',
-      name: 'Partner',
+      bg: '/assets/MikhailPresenting.jpeg',
+      name: 'Mikhail Holst',
     },
   ]
 
