@@ -1,5 +1,5 @@
 <script>
-    let submitToUrl = "https://sfapp-api.dreamstate-4-all.org/form_lead/create";
+    let submitToUrl = "https://sfapp-api.dreamstate-4-all.org/form_lead/create/";
 
     let name = "";
     let phone = "";
