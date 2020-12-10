@@ -1,5 +1,6 @@
 <script>
-    let submitToUrl = "https://sfapp-api.dreamstate-4-all.org/form_lead/create/";
+    let submitToUrl =
+        "https://sfapp-api.dreamstate-4-all.org/form_lead/create/";
 
     let name = "";
     let phone = "";
@@ -12,25 +13,34 @@
     async function submitForm(event) {
         submiting = true;
         message = "submitting";
-        const response = await fetch(submitToUrl, {
-            method: "POST",
-            headers: {
-                "content-type": "application/json",
-            },
-            body: JSON.stringify({
-                name,
-                phone,
-                email,
-                blub: description,
-            }),
-        });
-        const responseData = await response.json();
-        false && console.log(responseData);
+        try {
+            const response = await fetch(submitToUrl, {
+                method: "POST",
+                headers: {
+                    "content-type": "application/json",
+                },
+                body: JSON.stringify({
+                    name,
+                    phone,
+                    email,
+                    blub: description,
+                }),
+            });
+            await response.json();
+        } catch (err) {
+            submiting = false;
+            message = "failed";
+            setTimeout(() => {
+                message = "";
+            }, 10000);
+            return;
+        }
         submiting = false;
         message = "submited";
         setTimeout(() => {
             message = "";
         }, 5000);
+        name = phone = email = description = "";
     }
 </script>
 
