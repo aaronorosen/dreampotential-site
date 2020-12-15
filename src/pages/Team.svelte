@@ -9,16 +9,16 @@
       name: 'Aaron rosen',
     },
     {
+      bg: '/assets/MikhailPresenting.jpeg',
+      name: 'Mikhail Holst',
+    },
+    {
       bg: '/assets/Prakash-Kunda.png',
       name: 'Satya narayana',
     },
     {
       bg: '/assets/Neil Freese.png',
       name: 'Neil Freese',
-    },
-    {
-      bg: '/assets/MikhailPresenting.jpeg',
-      name: 'Mikhail Holst',
     },
   ]
 
