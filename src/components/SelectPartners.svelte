@@ -4,7 +4,7 @@
 
   const partners = [
     {
-      name: "Neighborgoods",
+      name: "Neighbormade",
       about: [
         `Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati dolor
         quos suscipit. Suscipit, natus. Aspernatur magni, dignissimos sit
@@ -12,7 +12,7 @@
         quos eos amet dolores recusandae et, beatae saepe nihil modi
         perferendis, quis consequuntur?`,
       ],
-      img: "/assets/DP-Logos-01.svg",
+      img: "/assets/DP-Logos-01.png",
     },
     {
       name: "Manifest Now",
