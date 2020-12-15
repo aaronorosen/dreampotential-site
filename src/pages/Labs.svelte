@@ -182,7 +182,7 @@
                         spellcheck="false" />
                 </label>
                 <label>
-                    <span>Email</span>
+                    <span>Email:</span>
                     <input
                         type="email"
                         placeholder="john@example.com"
@@ -190,7 +190,7 @@
                         spellcheck="false" />
                 </label>
                 <label>
-                    <span>Phone</span>
+                    <span>Phone:</span>
                     <input
                         type="tel"
                         placeholder="123-45-678"
