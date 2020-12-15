@@ -2,11 +2,25 @@
     import { createEventDispatcher } from "svelte";
 
     export let partner;
+    let videoWrapper;
 
     const dispatch = createEventDispatcher();
 
     function close() {
         dispatch("close");
+    }
+
+    function autoplay(element) {
+        const video = element.querySelector("video");
+        if (video) {
+            video.onloadstart = function () {
+                video.play();
+            };
+        }
+    }
+
+    $: if (videoWrapper) {
+        autoplay(videoWrapper);
     }
 </script>
 
@@ -50,11 +64,9 @@
         justify-content: center;
         margin: 1rem 0;
         --video-bg: #333;
-        background: var(--video-bg);
     }
     :global(.video-wrapper iframe),
     :global(.video-wrapper video) {
-        background: var(--video-bg);
         width: 100%;
         max-width: 100%;
         outline: none;
@@ -68,7 +80,7 @@
             <p>{about}</p>
         {/each}
         {#if partner.video}
-            <div class="video-wrapper">
+            <div class="video-wrapper" bind:this={videoWrapper}>
                 {#if partner.video.iframe}
                     {@html partner.video.iframe}
                 {:else if partner.video.videoTag}
@@ -76,9 +88,9 @@
                 {:else if partner.video.src}
                     <video
                         src={partner.video.src}
+                        autoplay
                         controls
                         muted
-                        autoplay
                         loop
                         playsinline />
                 {/if}

@@ -1,13 +1,16 @@
 <script>
-  import { onMount } from 'svelte'
+  import { onMount } from "svelte";
 
-  let scrollY
-  let homeLink
+  let scrollY;
+  let homeLink;
 
-  onMount(() => setTimeout(resize, 20))
+  onMount(() => setTimeout(resize, 20));
 
   function resize(event) {
-    document.body.style.setProperty('--offset', `${homeLink.offsetLeft || 150}px`)
+    document.body.style.setProperty(
+      "--offset",
+      `${homeLink.offsetLeft || 150}px`
+    );
   }
 </script>
 
@@ -38,7 +41,7 @@
     padding: 35px 4vw;
     color: var(--third);
     transition: background 500ms;
-    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-family: "Yanone Kaffeesatz", sans-serif;
     letter-spacing: 0;
   }
   nav.bg {
@@ -134,7 +137,8 @@
       <a href="/" bind:this={homeLink}>Dream Potential</a>
     </div>
     <div class="menu">
-      <a href="/philosophy">Philosophy</a>
+      <!-- <a href="/philosophy">Philosophy</a> -->
+      <a href="/labs">Labs</a>
       <a href="/portfolio">Portfolio</a>
       <a href="/team">TEAM</a>
       <a class="bordered" href="/join">Join US</a>
