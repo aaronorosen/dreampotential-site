@@ -6,46 +6,42 @@
     {
       name: "Neighbormade",
       about: [
-        `Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati dolor
-        quos suscipit. Suscipit, natus. Aspernatur magni, dignissimos sit
-        eveniet sunt voluptates alias. Debitis distinctio omnis odio excepturi
-        quos eos amet dolores recusandae et, beatae saepe nihil modi
-        perferendis, quis consequuntur?`,
+        `For the Love of Local`,
+        `Neighbormade is a marketplace that empowers people to start small businesses and sell their creations locally and sustainably.`,
+        `Goodbye, e-commerce. Hello, we-commerce.`,
+        `Building robust communities through positive actions.`,
+        `Neighbormade`,
       ],
       img: "/assets/DP-Logos-01.png",
     },
     {
       name: "Manifest Now",
       about: [
-        `Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati dolor
-        quos suscipit. Suscipit, natus. Aspernatur magni, dignissimos sit
-        eveniet sunt voluptates alias. Debitis distinctio omnis odio excepturi
-        quos eos amet dolores recusandae et, beatae saepe nihil modi
-        perferendis, quis consequuntur?`,
-        `Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati dolor
-        quos suscipit. Suscipit, natus. Aspernatur magni, dignissimos sit
-        eveniet sunt voluptates alias. Debitis distinctio omnis odio excepturi
-        quos eos amet dolores recusandae et, beatae saepe nihil modi
-        perferendis, quis consequuntur?`,
+        `Spiritual Magic Visualization`,
+        `10 day program`,
+        `Manifest Now`,
       ],
       img: "/assets/DP-Logos-03.svg",
     },
     {
       name: "IAM",
       about: [
-        `Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati dolor
-        quos suscipit. Suscipit, natus. Aspernatur magni, dignissimos sit
-        eveniet sunt voluptates alias. Debitis distinctio omnis odio excepturi
-        quos eos amet dolores recusandae et, beatae saepe nihil modi
-        perferendis, quis consequuntur?`,
-        `Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati dolor
-        quos suscipit. Suscipit, natus. Aspernatur magni, dignissimos sit
-        eveniet sunt voluptates alias. Debitis distinctio omnis odio excepturi
-        quos eos amet dolores recusandae et, beatae saepe nihil modi
-        perferendis, quis consequuntur?`,
+        `INTERACTIVE ACCOUNTABILITY TECHNOLOGY`,
+        `Behavioral Health Science Platform`,
+        `Digital Medication Monitoring`,
       ],
       img: "/assets/I-AM-Logo-04.svg",
       imageWith: "150",
+      video: {
+        iframe: `<iframe
+                    title="youtube video"
+                    width="560"
+                    height="315"
+                    src="https://www.youtube-nocookie.com/embed/OvtBcf6QJRc?controls=0"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen />`,
+      },
     },
     {
       name: "Connective Places",
@@ -83,33 +79,23 @@
     {
       name: "No Scroll Dream Reader",
       about: [
-        `Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati dolor
-        quos suscipit. Suscipit, natus. Aspernatur magni, dignissimos sit
-        eveniet sunt voluptates alias. Debitis distinctio omnis odio excepturi
-        quos eos amet dolores recusandae et, beatae saepe nihil modi
-        perferendis, quis consequuntur?`,
-        `Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati dolor
-        quos suscipit. Suscipit, natus. Aspernatur magni, dignissimos sit
-        eveniet sunt voluptates alias. Debitis distinctio omnis odio excepturi
-        quos eos amet dolores recusandae et, beatae saepe nihil modi
-        perferendis, quis consequuntur?`,
+        `Texted Comprehension AI`,
+        `Science based to increase your stamina using latest Natural Language processing techniques.`,
       ],
       img: "/assets/NoScrollDreamReader.png",
+      video: {
+        src: '/videos/dreamReader.mp4'
+      },
       imageWith: "100",
     },
     {
       name: "RePicture",
       about: [
-        `Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati dolor
-        quos suscipit. Suscipit, natus. Aspernatur magni, dignissimos sit
-        eveniet sunt voluptates alias. Debitis distinctio omnis odio excepturi
-        quos eos amet dolores recusandae et, beatae saepe nihil modi
-        perferendis, quis consequuntur?`,
-        `Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati dolor
-        quos suscipit. Suscipit, natus. Aspernatur magni, dignissimos sit
-        eveniet sunt voluptates alias. Debitis distinctio omnis odio excepturi
-        quos eos amet dolores recusandae et, beatae saepe nihil modi
-        perferendis, quis consequuntur?`,
+        `EXPLORE SCIENCE, TECHNOLOGY, ENGINEERING AND MATH (STEM) ALL AROUND YOU`,
+        `Discover Careers Shaping the Future`,
+        `REPICTURE HELPS YOU FIND THE RIGHT ENGINEERING JOBS AND CAREER`,
+        `innovative STEM lesson inspire the next generation`,
+        `RePicture`,
       ],
       img: "/assets/RePicture.png",
       imageWith: "180",
@@ -117,18 +103,14 @@
     {
       name: "AgentStat",
       about: [
-        `Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati dolor
-        quos suscipit. Suscipit, natus. Aspernatur magni, dignissimos sit
-        eveniet sunt voluptates alias. Debitis distinctio omnis odio excepturi
-        quos eos amet dolores recusandae et, beatae saepe nihil modi
-        perferendis, quis consequuntur?`,
-        `Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati dolor
-        quos suscipit. Suscipit, natus. Aspernatur magni, dignissimos sit
-        eveniet sunt voluptates alias. Debitis distinctio omnis odio excepturi
-        quos eos amet dolores recusandae et, beatae saepe nihil modi
-        perferendis, quis consequuntur?`,
+        `Would first Real Estate Agent Search Engine allows home owner to find best agent to sell their house based on data.`,
+        `Pick right Agent every time`,
+        `AgentStat`,
       ],
       img: "/assets/AgentStat.png",
+      video: {
+        videoTag: `<video id="video-player" src="https://agentstat.com/video/GETSTAT-7-11.10.2020.mp4" controls="" muted="" autoplay="" loop="" playsinline=""></video>`,
+      },
       imageWith: "180",
     },
   ];

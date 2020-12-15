@@ -23,7 +23,7 @@
         padding: 1rem;
         max-width: 100%;
         max-height: 80vh;
-        overflow-y: scroll;
+        overflow-y: auto;
     }
     .buttons {
         display: flex;
@@ -49,9 +49,15 @@
         display: flex;
         justify-content: center;
         margin: 1rem 0;
+        --video-bg: #333;
+        background: var(--video-bg);
     }
-    .video-wrapper iframe {
+    :global(.video-wrapper iframe),
+    :global(.video-wrapper video) {
+        background: var(--video-bg);
+        width: 100%;
         max-width: 100%;
+        outline: none;
     }
 </style>
 
@@ -61,16 +67,23 @@
         {#each partner.about as about}
             <p>{about}</p>
         {/each}
-        <div class="video-wrapper">
-            <iframe
-                title="youtube video"
-                width="560"
-                height="315"
-                src="https://www.youtube-nocookie.com/embed/OvtBcf6QJRc?controls=0"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen />
-        </div>
+        {#if partner.video}
+            <div class="video-wrapper">
+                {#if partner.video.iframe}
+                    {@html partner.video.iframe}
+                {:else if partner.video.videoTag}
+                    {@html partner.video.videoTag}
+                {:else if partner.video.src}
+                    <video
+                        src={partner.video.src}
+                        controls
+                        muted
+                        autoplay
+                        loop
+                        playsinline />
+                {/if}
+            </div>
+        {/if}
         <div class="buttons">
             <button class="close-btn" on:click={close}>x</button>
         </div>
