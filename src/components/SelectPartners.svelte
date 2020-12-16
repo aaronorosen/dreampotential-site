@@ -16,11 +16,7 @@
     },
     {
       name: "Manifest Now",
-      about: [
-        `Spiritual Magic Visualization`,
-        `10 day program`,
-        `Manifest Now`,
-      ],
+      about: [`Spiritual Magic Visualization`, `7 day program`, `Manifest Now`],
       img: "/assets/DP-Logos-03.svg",
     },
     {
@@ -98,6 +94,9 @@
         `RePicture`,
       ],
       img: "/assets/RePicture.png",
+      video: {
+        src: "/videos/RePicture.mp4",
+      },
       imageWith: "180",
     },
     {
