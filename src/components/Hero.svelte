@@ -7,7 +7,9 @@
     width: 100%;
     min-height: 100vh;
     color: var(--third);
+    /* px to in */
     padding: 150px;
+    padding: 1.6in;
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
@@ -36,7 +38,9 @@
     gap: 40px;
     box-sizing: border-box;
     padding-top: 5rem;
+    /* px to in */
     min-height: 550px;
+    min-height: 5.5in;
   }
   h2 {
     font-size: 2.2rem;

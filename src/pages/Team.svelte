@@ -33,18 +33,18 @@
 
 <style>
   section {
-    min-height: calc(100vh - 300px);
+    min-height: calc(100vh - 18.75rem);
     margin-top: 150px;
-    margin-top: var(--navbar-height);
+    margin-top: calc(var(--navbar-height) + 1.5rem);
   }
   .members {
     display: grid;
     margin: 0 auto;
-    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(18.75rem, auto));
   }
   .member {
     position: relative;
-    min-height: 300px;
+    min-height: 18.75rem;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -63,12 +63,12 @@
     font-weight: bold;
     z-index: 11;
   }
-  @media (max-width: 1100px) {
+  @media (max-width: 68.75rem) {
     .members {
       max-width: 100%;
     }
   }
-  @media (max-width: 600px) {
+  @media (max-width: 37.5rem) {
     .members {
       display: flex;
       flex-direction: column;

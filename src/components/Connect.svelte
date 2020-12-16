@@ -47,7 +47,7 @@
 <style>
     section {
         margin: 4rem 0;
-        min-height: 600px;
+        min-height: 37.5rem;
     }
     h1 {
         text-align: center;
@@ -56,7 +56,7 @@
         font-weight: lighter;
     }
     .container {
-        max-width: 800px;
+        max-width: 50rem;
         padding: 1rem;
         margin: 0 auto;
         color: #ccc;
@@ -88,7 +88,7 @@
         border-radius: 2px;
     }
     textarea {
-        height: 150px;
+        height: 9.375rem;
         font-family: sans-serif;
     }
     .connect {
@@ -116,7 +116,7 @@
         user-select: none;
         text-transform: uppercase;
     }
-    @media (max-width: 400px){
+    @media (max-width: 25rem) {
         h1 {
             font-size: 10vw;
         }

@@ -13,7 +13,7 @@
 <style>
     .about-project {
         max-width: 90vw;
-        width: 600px;
+        width: 37.5rem;
         background: #e6d3ff;
         border-radius: 0.4rem;
         position: relative;
@@ -50,6 +50,8 @@
         justify-content: center;
         margin: 1rem 0;
         --video-bg: #333;
+        height: 100%;
+        background: red;
     }
     :global(.video-wrapper iframe),
     :global(.video-wrapper video) {
@@ -57,7 +59,7 @@
         max-width: 100%;
         outline: none;
     }
-    @media (max-width: 400px) {
+    @media (max-width: 25rem) {
         :global(.video-wrapper iframe),
         :global(.video-wrapper video) {
             max-height: 80vw;

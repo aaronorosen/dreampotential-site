@@ -8,7 +8,6 @@
 <style>
   main {
     background: linear-gradient(to bottom, var(--first), var(--second));
-    min-height: calc(100vh - 150px);
     animation: fadein 700ms;
   }
 </style>
