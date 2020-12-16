@@ -61,7 +61,7 @@
     bottom: 33%;
     margin-left: -33%;
     font-weight: bold;
-    z-index: 10;
+    z-index: 11;
   }
   @media (max-width: 1100px) {
     .members {
