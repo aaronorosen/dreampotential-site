@@ -17,7 +17,6 @@
     right: 0;
     width: 100vw;
     height: 100vh;
-    background: red;
     position: absolute;
     top: 0;
     content: "";
@@ -25,7 +24,6 @@
     background-repeat: no-repeat;
     background-position-x: right;
     background-size: 37%;
-    animation: fadein 3s;
   }
   .wrapper {
     z-index: 1;

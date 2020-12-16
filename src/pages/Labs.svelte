@@ -29,7 +29,6 @@
         background-repeat: no-repeat;
         background-position-x: right;
         background-size: 37%;
-        animation: fadein 3s;
     }
     .wrapper {
         z-index: 1;
