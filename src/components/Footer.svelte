@@ -33,6 +33,17 @@
       padding: 0 2rem;
     }
   }
+  @media (max-width: 320px) {
+    footer {
+      padding: 0 1rem;
+    }
+    span {
+      font-size: 6vw;
+    }
+    .button {
+      font-size: 5vw;
+    }
+  }
 </style>
 
 <footer>

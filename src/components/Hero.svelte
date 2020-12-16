@@ -1,22 +1,34 @@
 <script>
-  import Paras from './Paras.svelte'
+  import Paras from "./Paras.svelte";
 </script>
 
 <style>
   section {
     width: 100%;
     min-height: 100vh;
-    background: url(/assets/Hero-Graphic-01.png) no-repeat;
-    background-position-x: right;
-    background-size: 37%;
     color: var(--third);
-    padding: var(--offset, 150px);
+    padding: 150px;
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
     align-items: center;
   }
+  section::after {
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    background: red;
+    position: absolute;
+    top: 0;
+    content: "";
+    background: url(/assets/Hero-Graphic-01.png);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-size: 37%;
+    animation: fadein 3s;
+  }
   .wrapper {
+    z-index: 1;
     display: flex;
     flex-direction: column;
     justify-items: center;
@@ -54,9 +66,11 @@
   }
   @media (max-width: 1100px) {
     section {
-      background-size: 50%;
       padding-left: 75px;
       padding-right: 75px;
+    }
+    section::after {
+      background-size: 50%;
     }
   }
   @media (max-width: 700px) {
@@ -64,14 +78,21 @@
       margin-left: 0;
     }
     section {
-      background-size: calc(600px - 30vw);
       padding-left: 25px;
       padding-right: 25px;
     }
+    section::after {
+      background-size: calc(600px - 30vw);
+    }
   }
   @media (max-width: 600px) {
-    section {
-      padding-top: calc(var(--offset, 150px) * 2);
+    .wrapper {
+      padding-top: calc(var(--navbar-height) / 2);
+    }
+  }
+  @media (max-width: 320px) {
+    .wrapper {
+      padding-top: calc(var(--navbar-height) / 1.3);
     }
   }
 </style>

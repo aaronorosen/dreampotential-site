@@ -1,11 +1,10 @@
 @import url(./colors.css);
-html,
-body {
-    width: 100%;
+html, body {
     --font-first: 'Roboto', sans-serif;
     --font-second: 'Yanone Kaffeesatz', sans-serif;
     font-family: var(--font-first);
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
@@ -16,4 +15,17 @@ body {
 
 body::-webkit-scrollbar {
     display: none;
+}
+
+main {
+    --navbar-height: 150px;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }

@@ -181,6 +181,15 @@
       flex-grow: 1;
     }
   }
+  @media (max-width: 400px) {
+    h2 {
+      font-size: 7vw;
+    }
+    .partner {
+      min-width: 50vw;
+      max-width: 100%;
+    }
+  }
 </style>
 
 <section>

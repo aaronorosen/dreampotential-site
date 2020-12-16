@@ -1,32 +1,32 @@
 <script>
   let members = [
     {
-      bg: '/assets/SAurabh-Kulkarni.png',
-      name: 'Saurabh Kulkarni',
+      bg: "/assets/SAurabh-Kulkarni.png",
+      name: "Saurabh Kulkarni",
     },
     {
-      bg: '/assets/Aaron-Rosen.png',
-      name: 'Aaron rosen',
+      bg: "/assets/Aaron-Rosen.png",
+      name: "Aaron rosen",
     },
     {
-      bg: '/assets/MikhailPresenting.jpeg',
-      name: 'Mikhail Holst',
+      bg: "/assets/MikhailPresenting.jpeg",
+      name: "Mikhail Holst",
     },
     {
-      bg: '/assets/Prakash-Kunda.png',
-      name: 'Satya narayana',
+      bg: "/assets/Prakash-Kunda.png",
+      name: "Satya narayana",
     },
     {
-      bg: '/assets/Neil Freese.png',
-      name: 'Neil Freese',
+      bg: "/assets/Neil Freese.png",
+      name: "Neil Freese",
     },
-  ]
+  ];
 
-  let minHeight
+  let minHeight;
   function resize() {
-    const member = document.querySelector('.member img')
+    const member = document.querySelector(".member img");
     if (member) {
-      minHeight = member.offsetHeight
+      minHeight = member.offsetHeight;
     }
   }
 </script>
@@ -35,6 +35,7 @@
   section {
     min-height: calc(100vh - 300px);
     margin-top: 150px;
+    margin-top: var(--navbar-height);
   }
   .members {
     display: grid;
@@ -42,6 +43,7 @@
     grid-template-columns: repeat(auto-fit, minmax(300px, auto));
   }
   .member {
+    position: relative;
     min-height: 300px;
     display: flex;
     justify-content: center;
@@ -56,24 +58,26 @@
     position: absolute;
     text-transform: uppercase;
     color: white;
-    margin-top: 240px;
-    margin-left: -50px;
+    bottom: 33%;
+    margin-left: -33%;
     font-weight: bold;
-    z-index: 2;
+    z-index: 10;
   }
   @media (max-width: 1100px) {
     .members {
       max-width: 100%;
     }
   }
-  @media (max-width: 700px) {
-    section {
-      margin-top: 220px;
+  @media (max-width: 600px) {
+    .members {
+      display: flex;
+      flex-direction: column;
     }
-  }
-  @media (max-width: 330px) {
-    section {
-      margin-top: 250px;
+    .member {
+      min-height: 0;
+    }
+    .member span {
+      font-size: 5vw;
     }
   }
 </style>

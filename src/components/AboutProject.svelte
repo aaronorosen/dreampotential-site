@@ -71,6 +71,12 @@
         max-width: 100%;
         outline: none;
     }
+    @media (max-width: 400px) {
+        :global(.video-wrapper iframe),
+        :global(.video-wrapper video) {
+            max-height: 80vw;
+        }
+    }
 </style>
 
 <div class="about-project">

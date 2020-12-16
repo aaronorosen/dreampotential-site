@@ -37,6 +37,16 @@
     border-radius: 2px;
     text-decoration: none;
   }
+  @media (max-width: 400px) {
+    .wrapper {
+      margin-top: 3rem;
+      display: flex;
+      flex-direction: column;
+    }
+    span a {
+      font-size: 5vw;
+    }
+  }
 </style>
 
 <div class="wrapper">

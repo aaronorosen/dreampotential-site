@@ -1,6 +1,7 @@
 <script>
   import { onMount } from "svelte";
 
+  export let navbarHeight = 0;
   let scrollY;
   let homeLink;
 
@@ -9,7 +10,7 @@
   function resize(event) {
     document.body.style.setProperty(
       "--offset",
-      `${homeLink.offsetLeft || 150}px`
+      `${homeLink.offsetLeft > 100 ? 136 : homeLink.offsetLeft}px`
     );
   }
 </script>
@@ -63,6 +64,8 @@
     display: flex;
     align-items: center;
     gap: 25px;
+    animation: fadein 1s;
+    min-height: 50px;
   }
   .logo a {
     margin-top: 0.2rem;
@@ -123,10 +126,24 @@
       flex-flow: wrap;
     }
   }
+  @media (max-width: 400px) {
+    .logo {
+      flex-direction: column;
+    }
+    .logo a {
+      animation: sizeup 300ms;
+      min-height: 24px;
+    }
+  }
+  @keyframes sizeup {
+    from {
+      font-size: 0.1rem;
+    }
+  }
 </style>
 
 <svelte:window bind:scrollY on:resize={resize} />
-<nav class:bg={scrollY > 150}>
+<nav class:bg={scrollY > 150} bind:clientHeight={navbarHeight}>
   <div class="wrapper">
     <div class="logo">
       <img

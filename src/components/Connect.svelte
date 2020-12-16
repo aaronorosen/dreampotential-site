@@ -116,6 +116,11 @@
         user-select: none;
         text-transform: uppercase;
     }
+    @media (max-width: 400px){
+        h1 {
+            font-size: 10vw;
+        }
+    }
 </style>
 
 <section id="connect">

@@ -8,9 +8,6 @@
     section {
         width: 100%;
         min-height: 100vh;
-        background: url(/assets/Hero-Graphic-01.png) no-repeat;
-        background-position-x: right;
-        background-size: 40%;
         color: var(--third);
         padding: var(--offset, 150px);
         padding-top: 170px;
@@ -19,7 +16,23 @@
         box-sizing: border-box;
         align-items: center;
     }
+    section::after {
+        background: red;
+        right: 0;
+        width: 100vw;
+        height: 100vh;
+        background: red;
+        position: absolute;
+        top: 0;
+        content: "";
+        background: url(/assets/Hero-Graphic-01.png);
+        background-repeat: no-repeat;
+        background-position-x: right;
+        background-size: 37%;
+        animation: fadein 3s;
+    }
     .wrapper {
+        z-index: 1;
         display: flex;
         flex-direction: column;
         justify-items: center;
@@ -27,7 +40,7 @@
         height: 100%;
         width: 100%;
         box-sizing: border-box;
-        /* padding-top: 5rem; */
+        padding-top: 2rem;
         min-height: 800px;
     }
     h2 {
@@ -53,6 +66,8 @@
     }
     .where_are_you label {
         display: flex;
+        max-width: 100%;
+        /* overflow: hidden; */
         justify-content: space-between;
         flex-wrap: wrap;
         justify-content: flex-end;
@@ -103,12 +118,17 @@
             padding-left: 75px;
             padding-right: 75px;
         }
+        section::after {
+            background-size: 50%;
+        }
     }
     @media (max-width: 700px) {
         section {
-            background-size: calc(600px - 30vw);
             padding-left: 25px;
             padding-right: 25px;
+        }
+        section::after {
+            background-size: calc(600px - 30vw);
         }
     }
     @media (max-width: 825px) {
@@ -126,8 +146,16 @@
         }
     }
     @media (max-width: 320px) {
-        section {
-            padding-top: 200px;
+        h2 {
+            font-size: 10vw;
+        }
+        .wrapper {
+            padding-top: calc(var(--navbar-height) / 2);
+        }
+        .where_are_you select,
+        .where_are_you input,
+        .where_are_you button {
+            min-width: 100%;
         }
     }
 </style>
