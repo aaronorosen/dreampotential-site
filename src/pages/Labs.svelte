@@ -17,6 +17,7 @@
         align-items: center;
     }
     section::after {
+        z-index: 6;
         background: red;
         right: 0;
         width: 100vw;
@@ -31,7 +32,6 @@
         background-size: 37%;
     }
     .wrapper {
-        z-index: 1;
         display: flex;
         flex-direction: column;
         justify-items: center;
