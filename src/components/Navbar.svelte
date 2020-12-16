@@ -67,7 +67,7 @@
     animation: fadein 1s;
     min-height: 50px;
   }
-  .logo a {
+  .logo span {
     margin-top: 0.2rem;
     font-size: 2rem;
     letter-spacing: 0.1rem;
@@ -97,7 +97,7 @@
     .logo {
       flex-basis: 100% !important;
     }
-    .logo a {
+    .logo span {
       font-size: 1.6rem;
     }
     .menu a {
@@ -112,7 +112,7 @@
     .logo img {
       max-height: 3rem;
     }
-    .logo a {
+    .logo span {
       font-size: 1.4rem;
     }
     .menu a {
@@ -130,7 +130,7 @@
     .logo {
       flex-direction: column;
     }
-    .logo a {
+    .logo span {
       animation: sizeup 300ms;
       min-height: 24px;
     }
@@ -145,14 +145,14 @@
 <svelte:window bind:scrollY on:resize={resize} />
 <nav class:bg={scrollY > 150} bind:clientHeight={navbarHeight}>
   <div class="wrapper">
-    <div class="logo">
+    <a href="/" class="logo">
       <img
         src="/assets/DP-Icon-01.png"
         alt=""
         on:click={() => homeLink.click()}
         on:load={resize} />
-      <a href="/" bind:this={homeLink}>Dream Potential</a>
-    </div>
+      <span bind:this={homeLink}>Dream Potential</span>
+    </a>
     <div class="menu">
       <!-- <a href="/philosophy">Philosophy</a> -->
       <a href="/labs">Labs</a>
