@@ -39,7 +39,7 @@
                     height="315"
                     src="https://www.youtube-nocookie.com/embed/OvtBcf6QJRc?controls=0"
                     frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen />`,
       },
     },
@@ -84,7 +84,7 @@
       ],
       img: "/assets/NoScrollDreamReader.png",
       video: {
-        src: '/videos/dreamReader.mp4'
+        src: "/videos/dreamReader.mp4",
       },
       imageWith: "100",
     },
@@ -109,7 +109,7 @@
       ],
       img: "/assets/AgentStat.png",
       video: {
-        videoTag: `<video id="video-player" src="https://agentstat.com/video/GETSTAT-7-11.10.2020.mp4" controls="" muted="" autoplay="" loop="" playsinline=""></video>`,
+        src: `https://agentstat.com/video/GETSTAT-7-11.10.2020.mp4`,
       },
       imageWith: "180",
     },

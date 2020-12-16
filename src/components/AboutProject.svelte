@@ -2,25 +2,11 @@
     import { createEventDispatcher } from "svelte";
 
     export let partner;
-    let videoWrapper;
 
     const dispatch = createEventDispatcher();
 
     function close() {
         dispatch("close");
-    }
-
-    function autoplay(element) {
-        const video = element.querySelector("video");
-        if (video) {
-            video.onloadstart = function () {
-                video.play();
-            };
-        }
-    }
-
-    $: if (videoWrapper) {
-        autoplay(videoWrapper);
     }
 </script>
 
@@ -86,19 +72,11 @@
             <p>{about}</p>
         {/each}
         {#if partner.video}
-            <div class="video-wrapper" bind:this={videoWrapper}>
+            <div class="video-wrapper">
                 {#if partner.video.iframe}
                     {@html partner.video.iframe}
-                {:else if partner.video.videoTag}
-                    {@html partner.video.videoTag}
                 {:else if partner.video.src}
-                    <video
-                        src={partner.video.src}
-                        autoplay
-                        controls
-                        muted
-                        loop
-                        playsinline />
+                    <video id="video-player" src={partner.video.src} controls />
                 {/if}
             </div>
         {/if}
