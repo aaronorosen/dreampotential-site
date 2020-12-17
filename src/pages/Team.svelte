@@ -20,6 +20,10 @@
       bg: "/assets/Neil Freese.png",
       name: "Neil Freese",
     },
+    {
+      bg: "",
+      name: "PARTNER",
+    },
   ];
 
   let minHeight;

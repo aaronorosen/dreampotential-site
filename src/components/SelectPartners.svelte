@@ -4,87 +4,6 @@
 
   const partners = [
     {
-      name: "Neighbormade",
-      about: [
-        `For the Love of Local`,
-        `Neighbormade is a marketplace that empowers people to start small businesses and sell their creations locally and sustainably.`,
-        `Goodbye, e-commerce. Hello, we-commerce.`,
-        `Building robust communities through positive actions.`,
-        `Neighbormade`,
-      ],
-      img: "/assets/DP-Logos-01.png",
-    },
-    {
-      name: "Manifest Now",
-      about: [`Spiritual Magic Visualization`, `7 day program`, `Manifest Now`],
-      img: "/assets/DP-Logos-03.svg",
-    },
-    {
-      name: "IAM",
-      about: [
-        `INTERACTIVE ACCOUNTABILITY TECHNOLOGY`,
-        `Behavioral Health Science Platform`,
-        `Digital Medication Monitoring`,
-      ],
-      img: "/assets/I-AM-Logo-04.svg",
-      imageWith: "150",
-      video: {
-        iframe: `<iframe
-                    title="youtube video"
-                    width="560"
-                    height="315"
-                    src="https://www.youtube-nocookie.com/embed/OvtBcf6QJRc?controls=0"
-                    frameborder="0"
-                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen />`,
-      },
-    },
-    {
-      name: "Connective Places",
-      about: [
-        `Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati dolor
-        quos suscipit. Suscipit, natus. Aspernatur magni, dignissimos sit
-        eveniet sunt voluptates alias. Debitis distinctio omnis odio excepturi
-        quos eos amet dolores recusandae et, beatae saepe nihil modi
-        perferendis, quis consequuntur?`,
-        `Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati dolor
-        quos suscipit. Suscipit, natus. Aspernatur magni, dignissimos sit
-        eveniet sunt voluptates alias. Debitis distinctio omnis odio excepturi
-        quos eos amet dolores recusandae et, beatae saepe nihil modi
-        perferendis, quis consequuntur?`,
-      ],
-      img: "/assets/DP-Logos-02.svg",
-    },
-    {
-      name: "Viaduct",
-      about: [
-        `Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati dolor
-        quos suscipit. Suscipit, natus. Aspernatur magni, dignissimos sit
-        eveniet sunt voluptates alias. Debitis distinctio omnis odio excepturi
-        quos eos amet dolores recusandae et, beatae saepe nihil modi
-        perferendis, quis consequuntur?`,
-        `Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati dolor
-        quos suscipit. Suscipit, natus. Aspernatur magni, dignissimos sit
-        eveniet sunt voluptates alias. Debitis distinctio omnis odio excepturi
-        quos eos amet dolores recusandae et, beatae saepe nihil modi
-        perferendis, quis consequuntur?`,
-      ],
-      img: "/assets/Viaduct-Logo-05.svg",
-      imageWith: "150",
-    },
-    {
-      name: "No Scroll Dream Reader",
-      about: [
-        `Texted Comprehension AI`,
-        `Science based to increase your stamina using latest Natural Language processing techniques.`,
-      ],
-      img: "/assets/NoScrollDreamReader.png",
-      video: {
-        src: "/videos/dreamReader.mp4",
-      },
-      imageWith: "100",
-    },
-    {
       name: "RePicture",
       about: [
         `EXPLORE SCIENCE, TECHNOLOGY, ENGINEERING AND MATH (STEM) ALL AROUND YOU`,
@@ -111,6 +30,87 @@
         src: `https://agentstat.com/video/GETSTAT-7-11.10.2020.mp4`,
       },
       imageWith: "180",
+    },
+    {
+      name: "IAM",
+      about: [
+        `INTERACTIVE ACCOUNTABILITY TECHNOLOGY`,
+        `Behavioral Health Science Platform`,
+        `Digital Medication Monitoring`,
+      ],
+      img: "/assets/I-AM-Logo-04.svg",
+      imageWith: "150",
+      video: {
+        iframe: `<iframe
+                    title="youtube video"
+                    width="560"
+                    height="315"
+                    src="https://www.youtube-nocookie.com/embed/OvtBcf6QJRc?controls=0"
+                    frameborder="0"
+                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen />`,
+      },
+    },
+    {
+      name: "Neighbormade",
+      about: [
+        `For the Love of Local`,
+        `Neighbormade is a marketplace that empowers people to start small businesses and sell their creations locally and sustainably.`,
+        `Goodbye, e-commerce. Hello, we-commerce.`,
+        `Building robust communities through positive actions.`,
+        `Neighbormade`,
+      ],
+      img: "/assets/DP-Logos-01.png",
+    },
+    {
+      name: "No Scroll Dream Reader",
+      about: [
+        `Texted Comprehension AI`,
+        `Science based to increase your stamina using latest Natural Language processing techniques.`,
+      ],
+      img: "/assets/NoScrollDreamReader.png",
+      video: {
+        src: "/videos/dreamReader.mp4",
+      },
+      imageWith: "100",
+    },
+    {
+      name: "Viaduct",
+      about: [
+        `Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati dolor
+        quos suscipit. Suscipit, natus. Aspernatur magni, dignissimos sit
+        eveniet sunt voluptates alias. Debitis distinctio omnis odio excepturi
+        quos eos amet dolores recusandae et, beatae saepe nihil modi
+        perferendis, quis consequuntur?`,
+        `Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati dolor
+        quos suscipit. Suscipit, natus. Aspernatur magni, dignissimos sit
+        eveniet sunt voluptates alias. Debitis distinctio omnis odio excepturi
+        quos eos amet dolores recusandae et, beatae saepe nihil modi
+        perferendis, quis consequuntur?`,
+      ],
+      img: "/assets/Viaduct-Logo-05.svg",
+      imageWith: "150",
+    },
+    {
+      name: "Connective Places",
+      about: [
+        `Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati dolor
+        quos suscipit. Suscipit, natus. Aspernatur magni, dignissimos sit
+        eveniet sunt voluptates alias. Debitis distinctio omnis odio excepturi
+        quos eos amet dolores recusandae et, beatae saepe nihil modi
+        perferendis, quis consequuntur?`,
+        `Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati dolor
+        quos suscipit. Suscipit, natus. Aspernatur magni, dignissimos sit
+        eveniet sunt voluptates alias. Debitis distinctio omnis odio excepturi
+        quos eos amet dolores recusandae et, beatae saepe nihil modi
+        perferendis, quis consequuntur?`,
+      ],
+      img: "/assets/DP-Logos-02.svg",
+    },
+    {
+      name: "Manifest Now",
+      about: [`Spiritual Magic Visualization`, `7 day program`, `Manifest Now`],
+      img: "/assets/DP-Logos-03.svg",
     },
   ];
 
