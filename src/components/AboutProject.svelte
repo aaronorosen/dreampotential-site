@@ -23,7 +23,7 @@
         padding: 1rem;
         max-width: 100%;
         max-height: 80vh;
-        overflow-y: auto;
+        overflow-y: hidden;
     }
     .buttons {
         display: flex;
