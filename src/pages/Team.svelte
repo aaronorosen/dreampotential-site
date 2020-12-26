@@ -6,7 +6,7 @@
     },
     {
       bg: "/assets/Aaron-Rosen.png",
-      name: "Aaron rosen",
+      name: "Aaron Rosen",
     },
     {
       bg: "/assets/MikhailPresenting.jpeg",
@@ -14,7 +14,7 @@
     },
     {
       bg: "/assets/Prakash-Kunda.png",
-      name: "Satya narayana",
+      name: "Satya Narayana",
     },
     {
       bg: "/assets/Neil Freese.png",
@@ -22,7 +22,7 @@
     },
     {
       bg: "",
-      name: "PARTNER",
+      name: "TEAMMATE",
     },
   ];
 
