@@ -7,10 +7,11 @@
     let companyName = ""
     let email = ""
     let phone = ""
-
+    let submitting = false 
     let resp 
     
     async function submit(){
+        submitting = true
         const res = await Leads.save({
             name: companyName,
             email,
@@ -111,7 +112,7 @@
                             bind:value={phone}
                             spellcheck="false" />
                     </label>
-                    <label> <span /> <button type="submit">Submit</button> </label>
+                    <label> <span /> <button disabled={submitting} type="submit">Submit</button> </label>
                 {/if}
             </form>
         {/if}
