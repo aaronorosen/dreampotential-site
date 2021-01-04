@@ -1,0 +1,10 @@
+.msg {
+    padding: 2rem 0;
+    font-weight: 700;
+}
+.msg-error {
+    color: var(--fourth)
+}
+.msg-success {
+    color: greenyellow;
+}

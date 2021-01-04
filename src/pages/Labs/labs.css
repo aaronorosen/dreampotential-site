@@ -1,0 +1,152 @@
+section {
+    width: 100%;
+    min-height: 100vh;
+    color: var(--third);
+    padding: var(--offset, 150px);
+    padding-top: 170px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: center;
+}
+section::after {
+    z-index: 6;
+    background: red;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    background: red;
+    position: absolute;
+    top: 0;
+    content: "";
+    background: url(/assets/Hero-Graphic-01.png);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-size: 37%;
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-content: flex-start;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 2rem;
+    /* min-height: 800px; */
+}
+h2 {
+    font-size: 2.4rem;
+    padding: 0;
+    margin: 3rem 0;
+}
+p,
+.wrapper > * {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+.where_are_you {
+    max-width: 588px;
+    margin: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+.where_are_you label {
+    display: flex;
+    max-width: 100%;
+    /* overflow: hidden; */
+    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+}
+.where_are_you select {
+    cursor: pointer;
+}
+.where_are_you select,
+.where_are_you input,
+.where_are_you button {
+    min-width: 280px;
+    box-sizing: border-box;
+    padding: 0.3rem 0.4rem;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    background: #7736cc44;
+    color: #ddd;
+    border-radius: 2px;
+}
+.where_are_you label span {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #aaa;
+}
+.where_are_you input::placeholder {
+    color: #ffffff66;
+}
+.where_are_you option {
+    background: #ffffff88;
+    color: black;
+}
+.where_are_you button {
+    min-width: 80px;
+    background: #5a289bcc;
+    cursor: pointer;
+}
+.where_are_you button:hover {
+    background: #5a289bff;
+    color: white;
+}
+@media (max-width: 1100px) {
+    section {
+        padding-left: 75px;
+        padding-right: 75px;
+    }
+    section::after {
+        background-size: 50%;
+    }
+}
+@media (max-width: 700px) {
+    section {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    section::after {
+        background-size: calc(600px - 30vw);
+    }
+}
+@media (max-width: 825px) {
+    .where_are_you label {
+        margin: 0.3rem;
+        justify-content: stretch;
+    }
+    .where_are_you select,
+    .where_are_you input,
+    .where_are_you button {
+        margin-top: 0.3rem;
+        width: 100%;
+        box-sizing: border-box;
+        background: #7736cc77;
+    }
+}
+@media (max-width: 320px) {
+    h2 {
+        font-size: 10vw;
+    }
+    .wrapper {
+        padding-top: calc(var(--navbar-height) / 2);
+    }
+    .where_are_you select,
+    .where_are_you input,
+    .where_are_you button {
+        min-width: 100%;
+    }
+}

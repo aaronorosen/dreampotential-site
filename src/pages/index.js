@@ -1,0 +1,5 @@
+export {default as Home} from './Home/Home.svelte'
+export {default as GoBeyond} from './GoBeyond/GoBeyond.svelte'
+export {default as Labs} from './Labs/Labs.svelte'
+export {default as Team} from './Team/Team.svelte'
+export {default as Page} from './Page/Page.svelte'

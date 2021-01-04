@@ -1,7 +1,6 @@
 <script>
-  import Navbar from "../components/Navbar.svelte";
-  import Footer from "../components/Footer.svelte";
-
+  import {Navbar, Footer} from "../../components";
+  
   let navbarHeight;
 </script>
 

@@ -1,11 +1,7 @@
 <script>
   import { onMount } from "svelte";
   import page from "page";
-  import Home from "./pages/Home.svelte";
-  // import GoBeyond from "./pages/GoBeyond.svelte";
-  import Team from "./pages/Team.svelte";
-  import Page from "./pages/Page.svelte";
-  import Labs from "./pages/Labs.svelte";
+  import {Home, Team, Page, Labs} from './pages'
 
   let active = Home;
 

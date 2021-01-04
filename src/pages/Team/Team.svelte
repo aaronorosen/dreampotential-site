@@ -35,55 +35,7 @@
   }
 </script>
 
-<style>
-  section {
-    min-height: calc(100vh - 18.75rem);
-    margin-top: 150px;
-    margin-top: calc(var(--navbar-height) + 1.5rem);
-  }
-  .members {
-    display: grid;
-    margin: 0 auto;
-    grid-template-columns: repeat(auto-fit, minmax(18.75rem, auto));
-  }
-  .member {
-    position: relative;
-    min-height: 18.75rem;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    overflow: hidden;
-    background: #da7d62;
-  }
-  .member img {
-    max-width: 100%;
-  }
-  .member span {
-    position: absolute;
-    text-transform: uppercase;
-    color: white;
-    bottom: 33%;
-    margin-left: -33%;
-    font-weight: bold;
-    z-index: 11;
-  }
-  @media (max-width: 68.75rem) {
-    .members {
-      max-width: 100%;
-    }
-  }
-  @media (max-width: 37.5rem) {
-    .members {
-      display: flex;
-      flex-direction: column;
-    }
-    .member {
-      min-height: 0;
-    }
-    .member span {
-      font-size: 5vw;
-    }
-  }
+<style src="./team.css">
 </style>
 
 <svelte:window on:resize={resize} />
