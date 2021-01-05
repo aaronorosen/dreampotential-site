@@ -1,7 +1,7 @@
 <script>
   import { onMount } from "svelte";
   import page from "page";
-  import {Home, Team, Page, Labs} from './pages'
+  import {Home, Team, Page, Labs, Education} from './pages'
 
   let active = Home;
 
@@ -20,6 +20,9 @@
   // });
   page("/labs", (context) => {
     active = Labs;
+  });
+  page("/education", (context) => {
+    active = Education;
   });
   page("/team", (context) => {
     active = Team;

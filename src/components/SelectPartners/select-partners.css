@@ -48,7 +48,7 @@ section {
     cursor: pointer;
   }
   .partner:hover {
-    background: var(--fourth);
+    background: var(--fourth-color);
   }
   .partner img {
     max-width: 70vw;

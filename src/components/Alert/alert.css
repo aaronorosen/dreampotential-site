@@ -3,8 +3,8 @@
     font-weight: 700;
 }
 .msg-error {
-    color: var(--fourth)
+    color: var(--fourth-color)
 }
 .msg-success {
-    color: greenyellow;
+    color: var(--success-color);
 }

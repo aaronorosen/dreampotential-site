@@ -1,10 +1,10 @@
 a {
-    color: var(--third);
+    color: var(--third-color);
     text-decoration: none;
     text-transform: uppercase;
   }
   a.bordered {
-    border: 2px solid var(--third);
+    border: 2px solid var(--third-color);
     letter-spacing: 3.36px;
     font-weight: bold;
     padding: 0.3rem;
@@ -15,20 +15,18 @@ a {
   nav {
     z-index: 100;
     position: absolute;
-    /* position: fixed; */
     top: 0;
     width: 100%;
     height: 9.37rem;
     background: transparent;
     box-sizing: border-box;
     padding: 2.18rem 4vw;
-    color: var(--third);
+    color: var(--third-color);
     transition: background 500ms;
-    font-family: "Yanone Kaffeesatz", sans-serif;
+    font-family: var(--font-second);
     letter-spacing: 0;
   }
   nav.bg {
-    /* background: var(--first-half); */
     background: transparent;
   }
   .wrapper {
@@ -45,10 +43,8 @@ a {
     flex-basis: 40% !important;
     display: flex;
     align-items: center;
-    /*  */
     gap: 25px;
     gap: 1.8rem;
-    /*  */
     animation: fadein 1s;
     min-height: 3.125rem;
   }
@@ -92,7 +88,6 @@ a {
   @media (max-width: 43.75rem) {
     nav {
       height: max-content;
-      /* background: var(--first-half); */
     }
     .logo img {
       max-height: 3rem;

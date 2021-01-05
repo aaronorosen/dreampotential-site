@@ -1,0 +1,29 @@
+:root {
+
+    /* Colors */
+    --first-color: #411c71;
+    --second-color: #260f43;
+    --third-color: #ffffff;
+    --fourth-color: #af4d55;
+    --success-color: #4BB543;
+    --gray-color: #aaa;
+    --light-gray-color: #ccc;
+    --dark-color: #000;
+    /* --fifth-color: linear-gradient(180deg, #210e39 0%, #34165b 47%, #260f43 100%) 0% 0% no-repeat padding-box; */
+    /* Transparent */
+    --first-tr-color: #411c71cc;
+    --bg-hover-color: #5a289bff;
+    --input-bg-color: #5a289b99;
+    --third-tr-color: #ffffffaa;
+    --placeholder-color: #ffffff66;
+    --link-bg-color: #ffffff22;
+    --overlay-bg-color: #ffffff33;
+
+    /* Font Family */
+    --font-first: 'Roboto', sans-serif;
+    --font-second: 'Yanone Kaffeesatz', sans-serif;
+
+    /* Height */
+    --navbar-height: 150px;
+    
+}

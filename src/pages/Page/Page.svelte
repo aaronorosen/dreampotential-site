@@ -6,7 +6,7 @@
 
 <style>
   main {
-    background: linear-gradient(to bottom, var(--first), var(--second));
+    background: linear-gradient(to bottom, var(--first-color), var(--second-color));
     animation: fadein 700ms;
   }
 </style>

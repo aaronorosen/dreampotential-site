@@ -5,14 +5,14 @@ section {
 h1 {
     text-align: center;
     font-size: 2.6rem;
-    color: #ccc;
+    color: var(--light-gray-color);
     font-weight: lighter;
 }
 .container {
     max-width: 50rem;
     padding: 2rem;
     margin: 0 auto;
-    color: #ccc;
+    color: var(--light-gray-color);
 }
 .container .center {
     text-align: center;
@@ -26,7 +26,7 @@ label {
     font-size: 1rem;
     font-weight: 600;
     text-transform: capitalize;
-    color: #aaa;
+    color: var(--gray-color);
     letter-spacing: 1px;
 }
 input,
@@ -34,13 +34,13 @@ textarea {
     margin-top: 0.3rem;
     box-sizing: border-box;
     width: 100%;
-    background: #411c7177;
+    background: var(--input-bg-color);
     padding: 0.5rem;
     border: none;
     outline: none;
     font-size: 1rem;
     resize: none;
-    color: #fff;
+    color: var(--third-color);
     border-radius: 2px;
 }
 textarea {
@@ -50,22 +50,22 @@ textarea {
 .connect {
     padding: 0.5rem;
     font-size: 1rem;
-    background: var(--first);
-    color: #ffffffaa;
+    background: var(--first-color);
+    color: var(--third-tr-color);
     font-weight: bold;
     border: none;
     outline: none;
 }
 .connect:hover {
-    background: #411c71cc;
+    background: var(--bg-hover-color);
 }
 .connect:disabled {
-    background: var(--first);
+    background: var(--first-color);
     opacity: 0.6;
 }
 input::placeholder,
 textarea::placeholder {
-    color: #ffffff66;
+    color: var(--placeholder-color);
 }
 button {
     cursor: pointer;

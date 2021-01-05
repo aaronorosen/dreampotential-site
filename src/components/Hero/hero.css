@@ -1,7 +1,7 @@
 section {
     width: 100%;
     min-height: 100vh;
-    color: var(--third);
+    color: var(--third-color);
     /* px to in */
     padding: 150px;
     padding: 1.6in;
@@ -52,10 +52,10 @@ section {
   .button {
     width: max-content;
     background: transparent;
-    border: 0.2rem solid var(--third);
+    border: 0.2rem solid var(--third-color);
     border-radius: 0.3rem;
     font-size: 1.6rem;
-    color: var(--third);
+    color: var(--third-color);
     padding: 0.4rem 0.8rem 0.2rem 0.8rem;
     font-family: var(--font-second);
     letter-spacing: 0.1rem;

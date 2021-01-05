@@ -32,7 +32,7 @@
     <div class="menu">
       <!-- <a href="/philosophy">Philosophy</a> -->
       <a href="/labs">Labs</a>
-      <a href="/portfolio">Portfolio</a>
+      <a href="/education">Education</a>
       <a href="/team">TEAM</a>
       <a class="bordered" href="/join">Join US</a>
     </div>

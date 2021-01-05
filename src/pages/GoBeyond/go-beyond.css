@@ -4,7 +4,7 @@ section {
     background: url(/assets/Hero-Graphic-01.png) no-repeat;
     background-position-x: right;
     background-size: 40%;
-    color: var(--third);
+    color: var(--third-color);
     padding: var(--offset, 150px);
     padding-top: 170px;
     display: flex;

@@ -2,24 +2,24 @@
 </style>
 
 <div class="wrapper">
-  <span>
+  <div class="paras-item">
     <p>
       Dream Potential is an accelerator program and technology collective.
     </p>
     <div><a href="#connect">Apply Accelerator Program</a></div>
-  </span>
+  </div>
 
-  <span>
+  <div class="paras-item">
     <p>
       Bring your Vision we manifest your projects.
     </p>
     <div><a href="#connect">Build Vision</a></div>
-  </span>
+  </div>
 
-  <span>
+  <div class="paras-item">
     <p>
       Not sure what how to enhance your organization or business.
     </p>
     <div><a href="#connect">Get in Touch</a></div>
-  </span>
+  </div>
 </div>

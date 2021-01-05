@@ -1,8 +1,8 @@
 footer {
     flex-grow: 0;
     height: 170px;
-    background: var(--first);
-    color: white;
+    background: var(--first-color);
+    color: var(--third-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -21,9 +21,9 @@ footer {
   }
   .button {
     padding: 0.5rem 0.5rem 0.3rem 0.5rem;
-    color: white;
+    color: var(--third-color);
     text-decoration: none;
-    border: 0.2rem solid var(--third);
+    border: 0.2rem solid var(--third-color);
     border-radius: 0.4rem;
     font-size: 1.3rem;
   }
