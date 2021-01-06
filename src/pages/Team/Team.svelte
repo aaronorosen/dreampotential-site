@@ -13,12 +13,12 @@
       name: "Mikhail Holst",
     },
     {
-      bg: "/assets/Prakash-Kunda.jpg",
-      name: "Satya Narayana",
-    },
-    {
       bg: "/assets/Neil Freese.jpg",
       name: "Neil Freese",
+    },
+    {
+      bg: "/assets/Prakash-Kunda.jpg",
+      name: "Satya Narayana",
     },
     {
       bg: "",
