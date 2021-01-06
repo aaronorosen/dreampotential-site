@@ -55,12 +55,12 @@ section {
     width: 300px;
     user-select: none;
   }
-  @media (max-width: 1100px) {
+  @media (max-width: 1200px) {
     .partner {
       flex-grow: 1;
     }
   }
-  @media (max-width: 400px) {
+  @media (max-width: 480px) {
     h2 {
       font-size: 7vw;
     }

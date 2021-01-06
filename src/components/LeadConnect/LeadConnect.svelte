@@ -3,6 +3,7 @@
     import {Leads} from '../../services'
     let who = "--";
     let title = ""
+    let name = ""
     let companyName = ""
     let email = ""
     let phone = ""
@@ -12,12 +13,12 @@
     async function submit(){
         submitting = true
         const res = await Leads.save({
-            name: companyName,
+            name: `${name} - ${title}`,
             email,
             phone,
             description: `
-                ${who}
-                ${companyName}
+                ${who},
+                Company: ${companyName}
             `
         })
 
@@ -32,6 +33,10 @@
                 message:"Thank you for submitting your contact, we will be in touch with you shorly."
             }
         }
+        // scroll to show the alert, useful on mobile
+        window.scrollTo({
+          top: window.scrollY - 300 
+        })
     }
 </script>
 
@@ -56,10 +61,19 @@
     </label>
     {#if who && who !== '--'}
       <label>
+        <span>Name:</span>
+        <input
+          type="text"
+          placeholder="Jhon Doe"
+          required
+          bind:value={name}
+          spellcheck="false" />
+      </label>
+      <label>
         <span>Title / Role:</span>
         <input
           type="text"
-          placeholder="title/role"
+          placeholder="Title/Role"
           required
           bind:value={title}
           spellcheck="false" />
@@ -93,7 +107,7 @@
       </label>
       <label>
         <span />
-        <button disabled={submitting} type="submit">Submit</button>
+        <button class={submitting ? 'disabled':''} disabled={submitting} type="submit">Submit</button>
       </label>
     {/if}
   </form>

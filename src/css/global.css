@@ -21,8 +21,7 @@ body::-webkit-scrollbar {
 }
 
 main {
-    z-index: 5;
-    --navbar-height: 150px;
+    z-index: 5;    
 }
 
 @keyframes fadein {

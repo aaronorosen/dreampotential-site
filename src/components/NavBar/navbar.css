@@ -70,7 +70,7 @@ a {
   .menu a:hover {
     text-decoration: underline;
   }
-  @media (max-width: 68rem) {
+  @media (max-width: 1024px) {
     nav {
       height: 160px;
     }
@@ -85,7 +85,7 @@ a {
       font-size: 1.3rem;
     }
   }
-  @media (max-width: 43.75rem) {
+  @media (max-width: 768px) {
     nav {
       height: max-content;
     }
@@ -106,7 +106,7 @@ a {
       flex-flow: wrap;
     }
   }
-  @media (max-width: 25rem) {
+  @media (max-width: 480px) {
     .logo {
       flex-direction: column;
     }

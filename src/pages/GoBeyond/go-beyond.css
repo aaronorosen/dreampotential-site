@@ -39,20 +39,20 @@ section {
     font-weight: 100;
     letter-spacing: 1px;
   }
-  @media (max-width: 1100px) {
+  @media (max-width: 1200px) {
     section {
       padding-left: 75px;
       padding-right: 75px;
     }
   }
-  @media (max-width: 700px) {
+  @media (max-width: 768px) {
     section {
       background-size: calc(600px - 30vw);
       padding-left: 25px;
       padding-right: 25px;
     }
   }
-  @media (max-width: 320px) {
+  @media (max-width: 480px) {
     section {
       padding-top: 200px;
     }

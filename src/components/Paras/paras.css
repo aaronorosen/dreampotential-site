@@ -19,7 +19,7 @@
     flex-basis: 80%;
     line-height: 1.7;
   }
-  @media (max-width: 700px) {
+  @media (max-width: 768px) {
     p {
       flex-basis: 100%;
     }
@@ -38,7 +38,7 @@
     border-radius: 2px;
     text-decoration: none;
   }
-  @media (max-width: 400px) {
+  @media (max-width: 480px) {
     .wrapper {
       margin-top: 3rem;
       display: flex;
@@ -46,5 +46,6 @@
     }
     .paras-item a {
       font-size: 5vw;
+      white-space: nowrap;
     }
   }

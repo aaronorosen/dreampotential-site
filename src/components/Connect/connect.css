@@ -72,7 +72,11 @@ button {
     user-select: none;
     text-transform: uppercase;
 }
-@media (max-width: 25rem) {
+.disabled{
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+@media (max-width: 480px) {
     h1 {
         font-size: 10vw;
     }

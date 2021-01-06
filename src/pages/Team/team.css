@@ -28,12 +28,12 @@ section {
     font-weight: bold;
     z-index: 11;
   }
-  @media (max-width: 68.75rem) {
+  @media (max-width: 768px) {
     .members {
       max-width: 100%;
     }
   }
-  @media (max-width: 37.5rem) {
+  @media (max-width: 480px) {
     .members {
       display: flex;
       flex-direction: column;

@@ -1,7 +1,7 @@
 .about-project {
     max-width: 90vw;
     width: 37.5rem;
-    background: #e6d3ff;
+    background: var(--fifth-color);
     border-radius: 0.4rem;
     position: relative;
     overflow: hidden;
@@ -16,8 +16,8 @@
     display: flex;
 }
 .close-btn {
-    background: #8855cc;
-    color: #e6d3ff;
+    background: var(--input-bg-color);
+    color: var(--fifth-color);
     border: none;
     outline: none;
     padding: 0.2rem 0.5rem;
@@ -36,9 +36,7 @@ p {
     display: flex;
     justify-content: center;
     margin: 1rem 0;
-    --video-bg: #333;
     height: 100%;
-    background: red;
 }
 :global(.video-wrapper iframe),
 :global(.video-wrapper video) {
@@ -46,7 +44,7 @@ p {
     max-width: 100%;
     outline: none;
 }
-@media (max-width: 25rem) {
+@media (max-width: 480px) {
     :global(.video-wrapper iframe),
     :global(.video-wrapper video) {
         max-height: 80vw;

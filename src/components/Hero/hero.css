@@ -61,7 +61,7 @@ section {
     letter-spacing: 0.1rem;
     text-decoration: none;
   }
-  @media (max-width: 1100px) {
+  @media (max-width: 1200px) {
     section {
       padding-left: 75px;
       padding-right: 75px;
@@ -70,7 +70,7 @@ section {
       background-size: 50%;
     }
   }
-  @media (max-width: 700px) {
+  @media (max-width: 768px) {
     h2:not(:first-child) {
       margin-left: 0;
     }
@@ -87,7 +87,7 @@ section {
       padding-top: calc(var(--navbar-height) / 2);
     }
   }
-  @media (max-width: 320px) {
+  @media (max-width: 480px) {
     .wrapper {
       padding-top: calc(var(--navbar-height) / 1.3);
     }

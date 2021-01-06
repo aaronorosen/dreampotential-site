@@ -78,7 +78,7 @@
                         bind:value={description} />
                 </label>
                 <button
-                    class="connect"
+                    class="connect {submiting ? 'disabled':''}"
                     disabled={submiting}>{message || 'CONNECT'}</button>
             </form>
         {/if}

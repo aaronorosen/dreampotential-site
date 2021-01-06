@@ -1,23 +1,23 @@
 <script>
   let members = [
     {
-      bg: "/assets/SAurabh-Kulkarni.png",
+      bg: "/assets/SAurabh-Kulkarni.jpg",
       name: "Saurabh Kulkarni",
     },
     {
-      bg: "/assets/Aaron-Rosen.png",
+      bg: "/assets/Aaron-Rosen.jpg",
       name: "Aaron Rosen",
     },
     {
-      bg: "/assets/MikhailPresenting.jpeg",
+      bg: "/assets/MikhailPresenting.jpg",
       name: "Mikhail Holst",
     },
     {
-      bg: "/assets/Prakash-Kunda.png",
+      bg: "/assets/Prakash-Kunda.jpg",
       name: "Satya Narayana",
     },
     {
-      bg: "/assets/Neil Freese.png",
+      bg: "/assets/Neil Freese.jpg",
       name: "Neil Freese",
     },
     {
