@@ -1,6 +1,6 @@
 <script>
     import { createEventDispatcher } from "svelte";
-
+    import LinkIcon from '../Icons/LinkIcon.svelte'
     export let partner;
 
     const dispatch = createEventDispatcher();
@@ -15,13 +15,17 @@
 
 <div class="about-project">
     <div class="content-wrapper">
-        <h2>{partner.name}</h2>
+        <h2>
+            {#if partner.website}
+                <a href={partner.website.url} target="_blank">{partner.name}</a>
+                <LinkIcon />
+            {:else}
+                {partner.name}
+            {/if}
+        </h2>
         {#each partner.about as about}
             <p>{about}</p>
         {/each}
-        {#if partner.website}
-            <a href={partner.website.url} target="_blank">{partner.website.name}</a>
-        {/if}
         {#if partner.video}
             <div class="video-wrapper">
                 {#if partner.video.iframe}

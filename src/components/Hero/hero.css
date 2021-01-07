@@ -1,10 +1,8 @@
 section {
     width: 100%;
-    min-height: 100vh;
+    min-height: 80vh;
     color: var(--third-color);
-    /* px to in */
-    padding: 150px;
-    padding: 1.6in;
+    padding: 0 1.6in;
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
@@ -81,14 +79,4 @@ section {
     section::after {
       background-size: calc(600px - 30vw);
     }
-  }
-  @media (max-width: 600px) {
-    .wrapper {
-      padding-top: calc(var(--navbar-height) / 2);
-    }
-  }
-  @media (max-width: 480px) {
-    .wrapper {
-      padding-top: calc(var(--navbar-height) / 1.3);
-    }
-  }
+  } 

@@ -1,9 +1,8 @@
 section {
     width: 100%;
-    min-height: 100vh;
+    min-height: 80vh;
     color: var(--third-color);
-    padding: var(--offset, 150px);
-    padding-top: 170px;
+    padding: 0 var(--offset, 150px);
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
@@ -33,7 +32,6 @@ section::after {
     width: 100%;
     box-sizing: border-box;
     padding-top: 2rem;
-    /* min-height: 800px; */
 }
 h2 {
     font-size: 2.4rem;
@@ -71,8 +69,5 @@ p,
 @media (max-width: 480px) {
     h2 {
         font-size: 10vw;
-    }
-    .wrapper {
-        padding-top: calc(var(--navbar-height) / 2);
     }
 }
