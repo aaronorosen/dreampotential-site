@@ -1,7 +1,7 @@
 <script>
   import { onMount } from "svelte";
   import page from "page";
-  import {Home, Team, Page, Labs, Education} from './pages'
+  import { Home, Team, Page, Labs, Education } from "./pages";
 
   let active = Home;
 
@@ -24,9 +24,9 @@
   page("/education", (context) => {
     active = Education;
   });
-  page("/team", (context) => {
-    active = Team;
-  });
+  // page("/team", (context) => {
+  //   active = Team;
+  // });
 
   page("*", () => page.redirect("/"));
 
