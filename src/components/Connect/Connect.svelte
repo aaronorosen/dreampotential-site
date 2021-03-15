@@ -45,7 +45,7 @@
                     <input
                         type="text"
                         class="name"
-                        placeholder="John Doe"
+                        placeholder="Full Name"
                         required
                         spellcheck="false"
                         bind:value={name} />
@@ -64,7 +64,7 @@
                     <input
                         type="email"
                         class="email"
-                        placeholder="john@example.com"
+                        placeholder="username@example.com"
                         required
                         bind:value={email} />
                 </label>
