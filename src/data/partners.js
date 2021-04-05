@@ -2,10 +2,7 @@ export default [
   {
     name: "RePicture",
     about: [
-      `EXPLORE SCIENCE, TECHNOLOGY, ENGINEERING AND MATH (STEM) ALL AROUND YOU`,
-      `Discover Careers Shaping the Future`,
-      `REPICTURE HELPS YOU FIND THE RIGHT ENGINEERING JOBS AND CAREER`,
-      `innovative STEM lesson inspire the next generation`,
+      `EXPLORE SCIENCE, TECHNOLOGY, ENGINEERING AND CULTURE PROJECTS GOING ON ALL AROUND THE WORLD REPICTURE `,
     ],
     img: "/assets/RePicture.png",
     video: {
@@ -20,7 +17,7 @@ export default [
   {
     name: "AgentStat",
     about: [
-      `Would first Real Estate Agent Search Engine allows home owner to find best agent to sell their house based on data.`,
+      `Real Estate Agent Search Engine allows home owner to find best agent to sell their house based on data.`,
       `Pick right Agent every time`,
     ],
     img: "/assets/AgentStat.png",
@@ -58,6 +55,18 @@ export default [
     },
   },
   {
+    name: "OnceAt",
+    about: [
+      `We live in a beautiful world, surrounded by amazing people pursuing wonderful interests. OnceAt is our honest attempt to connect you with your ever changing surroundings. Create and participate in meaningful conversations. Live life in the moment as the world itself is of flickering temporary nature.`,
+    ],
+    img: "/assets/OnceAt.png",
+    imageWith: "150",
+    website: {
+      name: 'OnceAt',
+      url: 'https://apps.apple.com/us/app/onceat/id1212274588'
+    },
+  },
+  {
     name: "Neighbormade",
     about: [
       `For the Love of Local`,
@@ -88,18 +97,9 @@ export default [
     }
   },
   {
-    name: "Viaduct",
+    name: "CSR Widget",
     about: [
-      `Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati dolor
-        quos suscipit. Suscipit, natus. Aspernatur magni, dignissimos sit
-        eveniet sunt voluptates alias. Debitis distinctio omnis odio excepturi
-        quos eos amet dolores recusandae et, beatae saepe nihil modi
-        perferendis, quis consequuntur?`,
-      `Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati dolor
-        quos suscipit. Suscipit, natus. Aspernatur magni, dignissimos sit
-        eveniet sunt voluptates alias. Debitis distinctio omnis odio excepturi
-        quos eos amet dolores recusandae et, beatae saepe nihil modi
-        perferendis, quis consequuntur?`,
+      `Add video customer support to any any website 123 CSR widget.`,
     ],
     img: "/assets/Viaduct-Logo-05.svg",
     imageWith: "150",
@@ -135,18 +135,6 @@ export default [
     website: {
       name: 'Action App',
       url: 'https://sfapp.dreamstate-4-all.org/#'
-    },
-  },
-  {
-    name: "OnceAt",
-    about: [
-      `We live in a beautiful world, surrounded by amazing people pursuing wonderful interests. OnceAt is our honest attempt to connect you with your ever changing surroundings. Create and participate in meaningful conversations. Live life in the moment as the world itself is of flickering temporary nature.`,
-    ],
-    img: "/assets/OnceAt.png",
-    imageWith: "150",
-    website: {
-      name: 'OnceAt',
-      url: 'https://apps.apple.com/us/app/onceat/id1212274588'
     },
   },
 ]
