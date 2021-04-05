@@ -30,7 +30,7 @@ export default [
     imageWith: "180",
     website: {
       name: 'AgentStat',
-      url: 'http://repicture.com/'
+      url: 'http://agentstat.com/'
     },
   },
   {
