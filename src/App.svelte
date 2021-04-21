@@ -4,6 +4,7 @@
   import { Home, Team, Page, Labs, Education } from "./pages";
 
   let active = Home;
+  let redirecting = true;
 
   page.start();
 
@@ -31,15 +32,21 @@
   page("*", () => page.redirect("/"));
 
   onMount(() => {
-    if (!location.host.match(/^(localhost)|(127.0.0.1)(:\d\d+)?/)) {
+    if (!location.host.match(/^(localhosi)|(127.0.0.1)(:\d\d+)?/)) {
       if (location.protocol === "http:") {
         location.protocol = "https:";
+        return;
       }
     }
+    redirecting = false;
     page.replace(location.pathname);
   });
 </script>
 
-<Page>
-  <svelte:component this={active || Home} />
-</Page>
+{#if redirecting}
+  <span>redirecting...</span>
+{:else}
+  <Page>
+    <svelte:component this={active || Home} />
+  </Page>
+{/if}
