@@ -31,6 +31,11 @@
   page("*", () => page.redirect("/"));
 
   onMount(() => {
+    if (!location.host.match(/^(localhost)|(127.0.0.1)(:\d\d+)?/)) {
+      if (location.protocol === "http:") {
+        location.protocol = "https:";
+      }
+    }
     page.replace(location.pathname);
   });
 </script>
