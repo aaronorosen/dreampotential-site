@@ -13,7 +13,7 @@
     </div>
     <p>
       We serve conscious entrepreneurs in their ambitions to make meaningful
-      impact in education, e-comerce and media.
+      impact in education, e-commerce and media.
     </p>
     <a href="/#connect" class="button">JOIN US</a>
   </div>

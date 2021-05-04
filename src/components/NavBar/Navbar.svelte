@@ -33,8 +33,9 @@
       <!-- <a href="/philosophy">Philosophy</a> -->
       <a href="/labs">Labs</a>
       <a href="/education">Education</a>
-      <a href="/team">TEAM</a>
+      <!-- <a href="/team">TEAM</a> -->
       <a class="bordered" href="/#connect">Join US</a>
+
     </div>
   </div>
 </nav>
