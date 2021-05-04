@@ -15,7 +15,7 @@
       We serve conscious entrepreneurs in their ambitions to make meaningful
       impact in education, e-comerce and media.
     </p>
-    <a href="/join" class="button">JOIN US</a>
+    <a href="/#connect" class="button">JOIN US</a>
   </div>
   <Paras />
 </section>

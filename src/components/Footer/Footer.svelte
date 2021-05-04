@@ -3,5 +3,5 @@
 
 <footer>
   <span>Dream Potential</span>
-  <a class="button" href="/join">Join Us</a>
+  <a class="button" href="/#connect">Join Us</a>
 </footer>

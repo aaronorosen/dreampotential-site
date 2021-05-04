@@ -34,7 +34,7 @@
       <a href="/labs">Labs</a>
       <a href="/education">Education</a>
       <a href="/team">TEAM</a>
-      <a class="bordered" href="/join">Join US</a>
+      <a class="bordered" href="/#connect">Join US</a>
     </div>
   </div>
 </nav>
