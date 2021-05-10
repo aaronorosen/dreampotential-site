@@ -1,5 +1,5 @@
 <script>
-    import {Connect, Alert, LeadConnect} from '../../components'
+    import {Connect} from '../../components'
     
 </script>
 
@@ -22,7 +22,6 @@
 
 	    Your Integration Partner to drive and implement clear solutions to often large open-ended problems.
         </p>
-        <!-- <LeadConnect /> -->
         <iframe class="iframe" title="Connect" src="https://teacher.dreampotential.org/slide-home.html?lesson_id=393" frameborder="0"></iframe>
     </div>
 </section>
