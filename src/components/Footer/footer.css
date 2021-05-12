@@ -1,4 +1,4 @@
-footer {
+  footer{
     flex-grow: 0;
     height: 170px;
     background: var(--first-color);
@@ -15,6 +15,11 @@ footer {
     width: 100%;
     z-index: 10;
   }
+  footer > div {
+    display: flex;
+    flex: auto;
+    flex-wrap: wrap;
+  }
   span {
     font-weight: bold;
     font-size: 1.3rem;
@@ -27,6 +32,15 @@ footer {
     border-radius: 0.4rem;
     font-size: 1.3rem;
   }
+  .link{
+    text-transform: lowercase;
+    flex: auto;
+    display: flex;
+    justify-content: center;
+  }
+  .link a {
+    color: var(--third-color);
+  }
   @media (max-width: 768px) {
     footer {
       padding: 0 2rem;
@@ -35,6 +49,9 @@ footer {
   @media (max-width: 480px) {
     footer {
       padding: 0 1rem;
+    }
+    .link {
+      justify-content: flex-start;
     }
     span {
       font-size: 6vw;
