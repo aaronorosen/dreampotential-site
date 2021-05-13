@@ -91,7 +91,7 @@
         <span>Email:</span>
         <input
           type="email"
-          placeholder="username@example.com"
+          placeholder="Email Address"
           required
           bind:value={email}
           spellcheck="false" />
@@ -100,7 +100,7 @@
         <span>Phone:</span>
         <input
           type="tel"
-          placeholder="123-45-678"
+          placeholder="Phone Number"
           pattern="\+?[-0-9 ]{'{3,15}'}"
           bind:value={phone}
           spellcheck="false" />

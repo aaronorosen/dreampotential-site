@@ -55,7 +55,7 @@
                     <input
                         type="tel"
                         class="phone"
-                        placeholder="123-45-678"
+                        placeholder="Phone Number"
                         pattern="\+?[-0-9 ]{'{3,15}'}"
                         bind:value={phone} />
                 </label>
@@ -64,7 +64,7 @@
                     <input
                         type="email"
                         class="email"
-                        placeholder="username@example.com"
+                        placeholder="Email Address"
                         required
                         bind:value={email} />
                 </label>
