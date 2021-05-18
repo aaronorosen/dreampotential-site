@@ -45,6 +45,25 @@ h2 a {
     margin: 1rem 0;
     height: 100%;
 }
+.video-wrapper img {
+    max-width: 100%;
+}
+
+.site-btn {
+    background-color: #3d91de;
+    background-image: linear-gradient(to right, #44aaef, #336ec5) !important;
+    color: #fff !important;
+    font-size: 22px;
+    min-width: 250px;
+    display: inline-block;
+    text-decoration: none !important;
+    outline: none !important;
+    text-align: center;
+    padding: 10px 15px;
+    border-radius: 30px;
+    transition: all 0.3s;
+}
+
 :global(.video-wrapper iframe),
 :global(.video-wrapper video) {
     width: 100%;

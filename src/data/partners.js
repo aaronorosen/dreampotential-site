@@ -137,4 +137,18 @@ export default [
       url: 'https://sfapp.dreamstate-4-all.org/#'
     },
   },
+  {},
+  {
+    name: "Chiropractor Tech",
+    imageWith: "250",
+    about: [`How is your body alignment?`, `Get your instant frame analysis and receive a free posture report in 60 seconds.`],
+    img: "/assets/ChiropractorTech.png",
+    video: {
+      img: '/images/ChiropractorTechPic.png'
+    },
+    website: {
+      btn_link: 'https://widget.chiropractortech.com/aaron-rosen_ol58g',
+      btn_label: 'Free AI Posture Report'
+    }
+  }
 ]

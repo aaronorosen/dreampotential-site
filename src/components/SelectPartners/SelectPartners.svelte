@@ -18,10 +18,12 @@
   <div class="partners">
     {#each partners as partner, index}
       <div class="partner" on:click={() => (activePartner = index)}>
+        {#if partner.img}
         <img
           style={partner.imageWith ? `width: ${partner.imageWith}px` : ''}
           src={partner.img}
           alt="" />
+        {/if}
       </div>
       {#if index === activePartner}
         <PartnerOverlay on:close={() => (activePartner = -1)}>
