@@ -1,4 +1,6 @@
 {
+    "homepage": "http://aaronorosen.github.io/dreampotential-site"
+
     "name": "dream-potential",
     "version": "1.0.0",
     "scripts": {
@@ -9,6 +11,7 @@
     "devDependencies": {
         "@rollup/plugin-commonjs": "^14.0.0",
         "@rollup/plugin-node-resolve": "^8.0.0",
+        "gh-pages": "^3.2.3",
         "page": "^1.11.6",
         "postcss": "^8.2.2",
         "postcss-import": "^14.0.0",
